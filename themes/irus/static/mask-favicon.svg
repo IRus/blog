@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="41.137mm" height="41.137mm" version="1.1" viewBox="0 0 41.137 41.137" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-1.6284 -1.747)">
+  <flowRoot transform="scale(.26458)" fill="#000000" font-family="sans-serif" font-size="40px" letter-spacing="0px" stroke="#3c3b37" stroke-opacity=".80087" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><flowRegion stroke="#3c3b37" stroke-opacity=".80087"><rect x="-4.6429" y="-33.195" width="65.357" height="215" stroke="#3c3b37" stroke-opacity=".80087"/></flowRegion><flowPara/></flowRoot>
+  <g id="0e" stroke-width="0" aria-label="0e">
+   <path d="m11.199 22.449v-2.667h2.6247v5.2917h-2.6247zm-5.334-11.938v-1.3123h13.25v2.667h2.667v21.167h-2.667v2.6247h-13.25v-2.6247h-2.6247v-21.167h2.6247zm10.583 3.9793v-2.6247h-7.9163v13.208h2.667v2.6247h-2.667v5.334h7.9163v-13.25h-2.6247v-2.667h2.6247z" stroke="#bfbfbf" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal"/>
+   <path d="m25.23 18.469v-1.3547h13.25v2.667h2.667v5.2917h-13.25v7.9587h7.9163v-2.667h5.334v2.667h-2.667v2.6247h-13.25v-2.6247h-2.6247v-13.25h2.6247zm10.583 2.6247v-1.3123h-7.9163v2.667h7.9163z" stroke-width="0" style="font-feature-settings:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal"/>
+  </g>
+  <text x="18.520834" y="48.953125" fill="#000000" font-family="sans-serif" font-size="10.583px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="18.520834" y="58.316895" stroke-width=".26458"/></text>
+ </g>
+</svg>

@@ -1,0 +1,22 @@
+title: "Zero Entropy"
+baseURL: "https://ruslan.ibragimov.by/"
+languageCode: "en-us"
+theme: irus
+disqusShortname: "ibragimov-ruslan"
+rssLimit: 10
+
+DefaultContentLanguage: en
+languages:
+  en:
+    weight: 1
+  ru:
+    weight: 2
+
+params:
+  description: "Kotlin, Programming, Thoughts, Travels."
+  author: "Ruslan Ibragimov"
+
+permalinks:
+  posts: /:year/:month/:day/:filename/
+
+preserveTaxonomyNames: true

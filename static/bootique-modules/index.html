@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+  <title>Bootique modules dependency graph.</title>
+  <meta charset="UTF-8"/>
+
+  <style type="text/css">
+    body {
+      font: 10pt sans;
+      margin: 0;
+      padding: 0;
+    }
+
+    #bootique-modules-network {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+
+  <script type="text/javascript" src="./vis.js"></script>
+  <link href="./vis-network.min.css" rel="stylesheet" type="text/css"/>
+
+
+  <script type="text/javascript">
+      var levels = {};
+
+      function module(name) {
+          return {id: name, label: name};
+      }
+
+      function testCompile(module, dependency) {
+          return {from: module, to: dependency, dashes: true, color: {color: "#cccccc", highlight: "#000000"}};
+      }
+
+      function compile(module, dependency) {
+          return {from: module, to: dependency, color: {color: "#42a8e8 ", highlight: "#ff5356"}};
+      }
+
+      var edges = [
+          testCompile("bootique-test", "bootique")
+
+          , compile("bootique-linkrest", "bootique")
+          , compile("bootique-linkrest", "bootique-cayenne")
+          , compile("bootique-linkrest", "bootique-jersey")
+          , testCompile("bootique-linkrest", "bootique-test")
+
+          , compile("bootique-linkmove", "bootique")
+          , compile("bootique-linkmove", "bootique-cayenne")
+          , compile("bootique-linkmove", "bootique-jdbc")
+          , testCompile("bootique-linkmove", "bootique-test")
+
+          , compile("bootique-cayenne-jcache", "bootique-cayenne")
+          , compile("bootique-cayenne-jcache", "bootique-jcache")
+          , testCompile("bootique-cayenne-jcache", "bootique-test")
+          , testCompile("bootique-cayenne-jcache", "bootique-cayenne-test")
+
+          , testCompile("bootique-cayenne-test", "bootique-cayenne")
+          , testCompile("bootique-cayenne-test", "bootique-jdbc-test")
+
+          , compile("bootique-cayenne", "bootique-jdbc")
+          , compile("bootique-cayenne", "bootique")
+          , testCompile("bootique-cayenne", "bootique-test")
+
+          , compile("bootique-tapestry", "bootique")
+          , compile("bootique-tapestry", "bootique-jetty")
+          , testCompile("bootique-tapestry", "bootique-test")
+          , testCompile("bootique-tapestry", "bootique-jetty-test")
+
+          , compile("bootique-metrics", "bootique")
+          , testCompile("bootique-metrics", "bootique-test")
+
+          , compile("bootique-liquibase", "bootique")
+          , compile("bootique-liquibase", "bootique-jdbc")
+          , testCompile("bootique-liquibase", "bootique-test")
+          , testCompile("bootique-liquibase", "bootique-jdbc-test")
+
+          , compile("bootique-kafka-client", "bootique")
+          , compile("bootique-kafka-client-0.8", "bootique")
+          , testCompile("bootique-kafka-client", "bootique-test")
+          , testCompile("bootique-kafka-client-0.8", "bootique-test")
+
+          , compile("bootique-jooq", "bootique")
+          , compile("bootique-jooq", "bootique-jdbc")
+          , testCompile("bootique-jooq", "bootique-test")
+          , testCompile("bootique-jooq", "bootique-jdbc-test")
+
+          , compile("bootique-job", "bootique")
+          , compile("bootique-job", "bootique-curator")
+          , testCompile("bootique-job", "bootique-test")
+
+          , compile("bootique-job-instrumented", "bootique-job")
+          , compile("bootique-job-instrumented", "bootique-metrics")
+          , testCompile("bootique-job-instrumented", "bootique-test")
+
+          , compile("bootique-jetty", "bootique")
+          , testCompile("bootique-jetty", "bootique-test")
+
+          , testCompile("bootique-jetty-test", "bootique-test")
+          , testCompile("bootique-jetty-test", "bootique-jetty-instrumented")
+
+          , compile("bootique-jetty-metrics", "bootique-metrics")
+          , compile("bootique-jetty-metrics", "bootique-jetty")
+          , testCompile("bootique-jetty-metrics", "bootique-test")
+
+          , compile("bootique-jetty-instrumented", "bootique-metrics")
+          , compile("bootique-jetty-instrumented", "bootique-jetty")
+          , testCompile("bootique-jetty-instrumented", "bootique-test")
+
+          , compile("bootique-jersey", "bootique")
+          , compile("bootique-jersey", "bootique-jetty")
+          , testCompile("bootique-jersey", "bootique-test")
+          , testCompile("bootique-jersey", "bootique-jetty-test")
+
+          , compile("bootique-jersey-jackson", "bootique-jersey")
+          , testCompile("bootique-jersey-jackson", "bootique-test")
+          , testCompile("bootique-jersey-jackson", "bootique-jetty-test")
+
+          , compile("bootique-jcache", "bootique")
+          , testCompile("bootique-jcache", "bootique-test")
+
+          , compile("bootique-flyway", "bootique")
+          , compile("bootique-flyway", "bootique-jdbc")
+          , testCompile("bootique-flyway", "bootique-test")
+          , testCompile("bootique-flyway", "bootique-jdbc-test")
+
+          , compile("bootique-curator", "bootique")
+          , testCompile("bootique-curator", "bootique-test")
+
+          , compile("bootique-jdbc", "bootique")
+          , testCompile("bootique-jdbc", "bootique-test")
+
+          , testCompile("bootique-jdbc-test", "bootique-test")
+          , testCompile("bootique-jdbc-test", "bootique-jdbc-instrumented")
+
+          , compile("bootique-jdbc-instrumented", "bootique-jdbc")
+          , compile("bootique-jdbc-instrumented", "bootique-metrics")
+          , testCompile("bootique-jdbc-instrumented", "bootique-test")
+
+          , compile("bootique-undertow", "bootique")
+          , testCompile("bootique-undertow", "bootique-test")
+
+          , testCompile("bootique-undertow-test", "bootique-test")
+          , testCompile("bootique-undertow-test", "bootique-undertow")
+
+          , compile("bootique-jersey-client", "bootique")
+          , testCompile("bootique-jersey-client", "bootique-test")
+          , testCompile("bootique-jersey-client", "bootique-jersey")
+          , testCompile("bootique-jersey-client", "bootique-jetty-test")
+          , testCompile("bootique-jersey-client", "bootique-logback")
+
+          , compile("bootique-jersey-client-instrumented", "bootique-jersey-client")
+          , compile("bootique-jersey-client-instrumented", "bootique-metrics")
+          , testCompile("bootique-jersey-client-instrumented", "bootique-test")
+          , testCompile("bootique-jersey-client-instrumented", "bootique-jersey")
+
+          , compile("bootique-swagger", "bootique")
+          , compile("bootique-swagger", "bootique-jersey")
+          , testCompile("bootique-swagger", "bootique-test")
+          , testCompile("bootique-swagger", "bootique-jetty-test")
+
+          , compile("bootique-shiro", "bootique")
+          , testCompile("bootique-shiro", "bootique-test")
+
+          , compile("bootique-shiro-web", "bootique-shiro")
+          , compile("bootique-shiro-web", "bootique-jetty")
+          , testCompile("bootique-shiro-web", "bootique-test")
+          , testCompile("bootique-shiro-web", "bootique-jetty-test")
+          , testCompile("bootique-shiro-web", "bootique-jersey")
+
+          , compile("bootique-shiro-jdbc", "bootique-shiro")
+          , compile("bootique-shiro-jdbc", "bootique-jdbc")
+          , testCompile("bootique-shiro-jdbc", "bootique-test")
+
+          , compile("bootique-rabbitmq-client", "bootique")
+          , testCompile("bootique-rabbitmq-client", "bootique-test")
+
+          , compile("bootique-logback", "bootique")
+          , testCompile("bootique-logback", "bootique-test")
+
+          , compile("bootique-logback-sentry", "bootique")
+          , compile("bootique-logback-sentry", "bootique-logback")
+          , testCompile("bootique-logback-sentry", "bootique-test")
+
+          , compile("bootique-mvc", "bootique-jersey")
+          , testCompile("bootique-mvc", "bootique-test")
+          , testCompile("bootique-mvc", "bootique-jetty-test")
+
+          , compile("bootique-mvc-mustache", "bootique-jersey")
+          , compile("bootique-mvc-mustache", "bootique-mvc")
+          , testCompile("bootique-mvc-mustache", "bootique-test")
+          , testCompile("bootique-mvc-mustache", "bootique-jetty-test")
+      ];
+
+      var nodes = [];
+
+      edges.forEach(function (edge) {
+          var from = nodes.find(function (node) {
+              return node.id === edge.from;
+          });
+
+          var to = nodes.find(function (node) {
+              return node.id === edge.to;
+          });
+
+          if (!from) {
+              nodes.push(module(edge.from));
+          }
+
+          if (!to) {
+              nodes.push(module(edge.to));
+          }
+      });
+
+      var levels = {
+          bootique: () => 1
+      };
+
+      function calculateLevels() {
+          edges.forEach(function (edge) {
+              if (!levels[edge.from]) {
+                  levels[edge.from] = () => 1
+              }
+
+              var fn = levels[edge.from];
+
+              levels[edge.from] = () => fn() + levels[edge.to]()
+          });
+          Object.keys(levels).forEach(function (key) {
+              nodes.find(node => node.id === key).level = levels[key]()
+          })
+      }
+
+      calculateLevels();
+
+      function distinct(value, index, self) {
+          return self.indexOf(value) === index;
+      }
+
+      var rawLevels = nodes
+          .sort((a, b) => a.level - b.level)
+          .map(node => node.level)
+          .filter(distinct)
+          .sort((a, b) => a - b);
+
+      nodes.forEach(node => {
+          node.level = rawLevels.indexOf(node.level) + 1;
+      });
+
+      function draw() {
+          new vis.Network(
+              document.getElementById("bootique-modules-network"),
+              {nodes: nodes, edges: edges},
+              {
+                  edges: {
+                      physics: false,
+                      width: 0.5,
+                      arrows: {
+                          to: {enabled: true, scaleFactor: 0.5, type: "arrow"}
+                      }
+                  },
+                  layout: {
+                      hierarchical: {
+                          levelSeparation: 100,
+                          nodeSpacing: 200,
+                          direction: "UD" // DU, LR
+                      }
+                  }
+              }
+          );
+      }
+
+  </script>
+</head>
+
+<body onload="draw();">
+<div id="bootique-modules-network"></div>
+</body>
+</html>
+

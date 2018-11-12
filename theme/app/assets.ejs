@@ -1,0 +1,4 @@
+<% for(var i = 0; i < htmlWebpackPlugin.files.css.length; i++) { %><link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}<%= htmlWebpackPlugin.files.css[i] %>"/>
+<% } %>
+<% for(var i = 0; i < htmlWebpackPlugin.files.js.length; i++) { %><script type="text/javascript" src="{{ .Site.BaseURL }}<%= htmlWebpackPlugin.files.js[i] %>"></script>
+<% } %>

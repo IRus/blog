@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Note</title>
+  <style>
+    body,
+    html,
+    textarea {
+      margin: 0;
+      padding: 0;
+    }
+
+    textarea {
+      border: none;
+      width: 98vw;
+      height: 98vh;
+      margin: 1vh 1vw;
+
+      font-size: 18px;
+      font-family: "Fira Code", monospace;
+
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+<textarea id="note" autofocus></textarea>
+
+<script>
+  const note = localStorage.getItem("note");
+  const noteEl = document.querySelector("#note");
+
+  console.log("load note", note);
+  noteEl.value = note;
+  noteEl.addEventListener("keyup", e => {
+      console.log("save note", e.target.value);
+      localStorage.setItem("note", e.target.value)
+  });
+</script>
+
+</body>
+</html>

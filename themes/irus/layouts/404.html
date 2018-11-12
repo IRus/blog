@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-template="404" lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+<body class="blog has-navbar-fixed-top">
+{{ partial "navbar.html" . }}
+<section class="blog-content section">
+  <main class="container">
+    <h1 class="title is-1">{{ .Site.Title }}</h1>
+    <div class="content is-large">
+      <h2>Oops! That page can’t be found.</h2>
+      <figure>
+        <img src="{{ .Site.BaseURL }}404.png" alt="Fake Doors from Rick and Morty">
+        <figcaption>
+          It looks like nothing was found at this location.
+          Go back to <a href="{{ .Site.BaseURL }}">main page</a>.
+        </figcaption>
+      </figure>
+    </div>
+  </main>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>

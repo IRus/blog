@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html data-template="_default/single" lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+<body class="blog has-navbar-fixed-top">
+{{ partial "navbar.html" . }}
+<section class="blog-content section">
+  <article class="container">
+    <div class="content is-medium">
+      <h1 class="title is-1">{{ .Title }}</h1>
+      <address class="blog-subtitle">
+        <time title="{{ .Date.Format " 2006-01-02" }}" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan, 2006" }}
+        </time>
+        <span>{{ i18n "readingTime" .ReadingTime }}</span>
+        in
+        {{ range .Params.categories }}
+        <a href="/categories/{{ . | urlize }}">{{ . }}</a>
+        {{end}}
+      </address>
+      {{ .Content }}
+    </div>
+    <hr/>
+    {{ partial "next_prev_in_section.html" . }}
+  </article>
+  {{ partial "comments.html" . }}
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>

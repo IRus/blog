@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html data-template="home" lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+<body class="blog has-navbar-fixed-top">
+{{ partial "navbar.html" . }}
+<section class="blog-content section">
+  <main class="container">
+    <h1 class="title is-1">{{ .Site.Title }}</h1>
+    <div class="content is-large">
+      {{ .Content }}
+    </div>
+    <div class="content is-large">
+      <div class="year-group">
+        {{ $pages := where .Site.Pages "Params.categories" "intersect" (slice "Highlights") }}
+        {{ range $pages.GroupByDate "2006" }}
+        <div class="year">{{ .Key }}</div>
+          {{ range .Pages }}
+          <div class="item">
+            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
+          </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <aside class="content is-medium">
+      <hr/>
+      Blog stats:
+      {{ string (len (where .Data.Pages "Section" "posts")) }} <a href="{{ .Site.BaseURL }}posts/">posts</a>,
+      {{ string (len (where .Data.Pages "Section" "pages")) }} <a href="{{ .Site.BaseURL }}pages/">pages</a>.
+    </aside>
+  </main>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>

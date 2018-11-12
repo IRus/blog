@@ -1,0 +1,12 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ .Title }} | Zero Entropy</title>
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  {{ partial "favicon.html" . }}
+  {{ partial "assets.html" . }}
+  <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+</head>
+

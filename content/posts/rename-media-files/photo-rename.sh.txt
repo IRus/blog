@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# First - check arguments
+if [[ $# = 0 ]]; then
+  # Case number of imput arguments = 0
+  echo "$(basename $0): missing directory operand";
+  echo "Try '$0 --help' for more information.";
+  exit 1;
+elif [[ $1 = "--help" ]]; then
+  # Case input argument --help
+  echo "Help here";
+  exit 0;
+elif [[ ! -d $1 ]]; then
+  # Check if first parameter is directory
+  echo "First parameter should be directory.";
+  exit 1;
+fi
+
+workdir=$1;
+
+# Go to working dir
+cd "$workdir";
+
+for file in *; do
+  shopt -s nocasematch
+  filename=$(basename "$file")
+  extension="${filename##*.}"
+  case $extension in
+    jpg)
+      jhead -n"%Y %m %d %H:%M:%S" "$file"
+    ;;
+  esac
+  shopt -u nocasematch
+done

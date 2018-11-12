@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html data-template="categories/list" lang="{{ .Site.LanguageCode }}">
+{{ partial "header.html" . }}
+<body class="blog has-navbar-fixed-top">
+{{ partial "navbar.html" . }}
+<section class="blog-content section">
+  <article class="container">
+    <div class="content is-large">
+      {{ .Content }}
+      <h1 class="title is-1">{{ .Title }}</h1>
+      {{ range .Pages }}
+        <p>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+          <span class="blog-category-description">{{ .Params.description }}</span>
+        </p>
+      {{ end }}
+    </div>
+  </article>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>
