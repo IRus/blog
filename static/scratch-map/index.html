@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
-  <link rel="stylesheet" href="https://openlayers.org/en/v4.4.1/css/ol.css" type="text/css">
+  <link rel="stylesheet" href="ol.css" type="text/css">
   <style>
     body {
       margin: 0;
@@ -16,7 +16,7 @@
       height: 100vh;
     }
   </style>
-  <script src="https://openlayers.org/en/v4.4.1/build/ol.js" type="text/javascript"></script>
+  <script src="ol.js" type="text/javascript"></script>
   <title>Scratch Map</title>
 </head>
 <body>
@@ -42,6 +42,8 @@
         })
     });
 
+    // TODO: Idea: Also show visited cities, and highlight X(40-50?)km area around
+    // Do the same for train and road trips - highlight X km area around path.
     // geojson.io
     const visitedCountries = [
         "Austria",
