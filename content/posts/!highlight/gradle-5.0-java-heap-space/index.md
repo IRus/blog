@@ -6,7 +6,7 @@ categories:
   - Highlights
 ---
 
-Today I try to update my work project to latest and grates gradle 5.0-rc-2, 
+Today I try to update my work project to latest and greatest gradle 5.0-rc-2, 
 and _all works fine on my machine_, but on CI I get the following error:
 
 ```
