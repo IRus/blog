@@ -146,19 +146,19 @@ visual vm and found that pressure really small, and 128mb enough for my project.
 
 ![Heap and CPU in Visual VM](./visualvm.png)
 
-Also, I found an interesting thing, even if I'll disable daemon mode, and you set 
+Also, I found an interesting thing, even if You'll disable daemon mode, and you set 
 non default heap amount, gradle will start another JVM with the same name as a regular daemon, 
 but this JVM will stop after build complete.
 
 ![Two processes](./two-processes.png)
 
-So to speed up build you can use parallel execution:
+_Bonus_: to speed up build you can use parallel execution:
 
 ```properties
 org.gradle.parallel=true
 ```
 
-In my case speed up was 33% or 10sec on a local machine.
+In my case speed up was 33% or 10 sec on a local machine.
 
 ## Conclusion
 
