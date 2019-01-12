@@ -135,7 +135,8 @@ suspend fun HttpAsyncClient.execute(request: HttpUriRequest): HttpResponse {
             }
 
             override fun cancelled() {
-                // Nothing
+                if (cont.isCancelled) returns
+                cont.resumeWith(Result.failure(CancellationException("Cancelled")))
             }
 
             override fun failed(ex: Exception) {
@@ -149,6 +150,6 @@ suspend fun HttpAsyncClient.execute(request: HttpUriRequest): HttpResponse {
 }
 ```
 
-Looks good, we use low-level `suspendCancellableCoroutine` function from standard library, and also we support cancellation of `Future`!
+Looks good, we use low-level `suspendCancellableCoroutine` function from standard library, and also we support cancellation of `Future`! (but cancellation support is [not perfect](https://github.com/Kotlin/kotlinx.coroutines/issues/830)).
 
 This is my final approach for today.
