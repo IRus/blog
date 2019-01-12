@@ -137,6 +137,9 @@ boooks:
   - name: "Социальная Архитектура"
     author: "Питер Хинченс"
     readed: 2018
+  - name: "The Lean Startup"
+    author: "Eric Ries"
+    readed: 2018
   - name: "The Elephant in the Brain"
     author: "Kevin Simler, Robin Hanson"
     readed: 2018
@@ -179,3 +182,6 @@ boooks:
   - name: "My Morning Routine"
     author: "Benjamin Spall, Michael Xander"
     readed: 2018
+  - name: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+    author: "Robert C. Martin"
+    readed: 2019
