@@ -3,6 +3,8 @@ title: "Curriculum vitae"
 date: 2018-11-12
 ---
 
+<!-- TODO: Grab data from stackoverflow: https://stackoverflow.com/cv/ibragimov_ruslan -->
+<!-- TODO: Grab data from stackoverflow: https://stackoverflow.com/story/ibragimov_ruslan -->
 <!-- TODO: Split in sections by year -->
 
 # Ruslan Ibragimov
