@@ -141,6 +141,10 @@ Frontend:
 * Javascript.ru - Webpack Screencast
 * БГУИР-IBA: Software architecture and design patterns
 
+#### 2019
+
+* [Kotlin Koans](https://stepik.org/course/4222/syllabus)
+
 ## Profiles
 
 * [stackoverflow](https://stackoverflow.com/users/1538877/irus)
@@ -148,6 +152,14 @@ Frontend:
 * [github](https://github.com/IRus)
 
 ## Projects
+
+### [Log data aggregation server](http://www.iac.com/)
+
+_Dec 2018 - Feb 2019_
+
+Replacement for [scribe](https://github.com/facebookarchive/scribe), written in async manner with Kotlin and Coroutines, uses Google Cloud Pub-Sub for stream ingestion.
+
+Connector from Google Cloud Pub-Sub to Amazon Kinesis, for processing in legacy analytics system.
 
 ### [Enterprise Product Data Manager](http://fpx.com/)
     
