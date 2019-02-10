@@ -19,11 +19,11 @@
           Home
         </a>
 
-        <a href="{{ .Site.BaseURL }}pages/cv/" class="navbar-item">
+        <a href="{{ "pages/cv/" | absLangURL }}" class="navbar-item">
           Curriculum vitae
         </a>
 
-        <a href="{{ .Site.BaseURL }}pages/projects/" class="navbar-item">
+        <a href="{{ "pages/projects/" | absLangURL }}" class="navbar-item">
           Projects
         </a>
 
@@ -41,7 +41,7 @@
               {{ emojify .Params.emoji }}
             </a>
         {{ end }}
-        <a href="{{ "index.xml" | absLangURL }}" class="navbar-item">
+        <a href="{{ "pages/rss/" | absLangURL }}" class="navbar-item">
           <span class="icon navbar-icon">
             <img src="{{ .Site.BaseURL }}icons/rss.svg" alt=""/>
           </span>
