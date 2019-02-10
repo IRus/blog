@@ -162,7 +162,7 @@ function createListOfPlugins({NODE_ENV}) {
       }
     }),
     new HtmlWebpackPlugin({
-        filename: "../layouts/partials/assets.html",
+        filename: "../layouts/partials/assets.gohtml",
         template: "app/assets.ejs",
         inject: false
     })
