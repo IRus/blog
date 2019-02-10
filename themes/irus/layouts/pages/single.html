@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html data-template="pages/single" lang="{{ .Site.LanguageCode }}">
-{{ partial "header.html" . }}
-<body class="blog has-navbar-fixed-top">
-{{ partial "navbar.html" . }}
-<section class="blog-content section">
-  <section class="section">
-    <article class="container">
-      <div class="content is-medium">
-        <h1 class="title is-1">{{ .Title }}</h1>
-        {{ .Content }}
-      </div>
-    </article>
-  </section>
-</section>
-{{ partial "footer.html" . }}
-</body>
-</html>
+{{ template "pages/single.gohtml" . }}

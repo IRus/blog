@@ -15,7 +15,7 @@
 
     <div id="main-menu" class="navbar-menu">
       <div class="navbar-start">
-        <a href="{{ .Site.BaseURL }}" class="navbar-item">
+        <a href="{{ "" | absLangURL }}" class="navbar-item">
           Home
         </a>
 
@@ -27,13 +27,21 @@
           Projects
         </a>
 
-        <a href="{{ .Site.BaseURL }}categories/" class="navbar-item">
+        <a href="{{ "categories/" | absLangURL }}" class="navbar-item">
           Categories
         </a>
       </div>
 
       <div class="navbar-end">
-        <a href="{{ .Site.BaseURL }}index.xml" class="navbar-item">
+        {{ $CurrentLang := .Lang }}
+        {{ range .Site.Languages }}
+          <a href="{{ .Lang | absURL }}"
+             class="{{ if eq $CurrentLang .Lang }}is-active{{end}} navbar-item"
+             rel="alternate" lang="{{ .Lang }}">
+              {{ emojify .Params.emoji }}
+            </a>
+        {{ end }}
+        <a href="{{ "index.xml" | absLangURL }}" class="navbar-item">
           <span class="icon navbar-icon">
             <img src="{{ .Site.BaseURL }}icons/rss.svg" alt=""/>
           </span>

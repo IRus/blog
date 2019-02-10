@@ -5,8 +5,9 @@
   <title>{{ .Title }} | Zero Entropy</title>
   <meta name="description" content="{{ .Site.Params.description }}">
   <meta name="author" content="{{ .Site.Params.author }}">
-  {{ partial "favicon.html" . }}
-  {{ partial "assets.html" . }}
+  {{ partial "favicon.gohtml" . }}
+  {{ partial "assets.gohtml" . }}
   <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+  <link href="{{ .Site.BaseURL }}ru/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} [RU]">
 </head>
 
