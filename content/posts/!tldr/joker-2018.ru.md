@@ -1,6 +1,6 @@
 ---
 title: "Joker 2018"
-date: 2019-04-01
+date: 2019-02-09
 categories:
   - TLDR
 ---
