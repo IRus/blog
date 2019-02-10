@@ -1,6 +1,6 @@
 ---
 title: "Hashdeep"
-date: 2019-02-11
+date: 2019-02-10
 categories:
   - Linux
 ---
@@ -19,7 +19,7 @@ and
 hashdeep -c sha1 -r ./test/ -X -k hashdeep-hashes-2019-02-11.txt
 ```
 
-First command traverses passed directory, and all subdirectories and writes in stdout files size, computed hashes and path:
+First command traverses passed directory and all subdirectories, then writes in stdout for every file it size, hash and path:
 
 ```text
 %%%% HASHDEEP-1.0
@@ -31,7 +31,7 @@ First command traverses passed directory, and all subdirectories and writes in s
 4833844,1da68b71c99be03f0f6a5d5f82ebfab3ebf4c821,/home/yoda/Desktop/test/thesis.pdf
 ```
 
-Second command used to verify, that content in particular folder matches file sizes and hashes from previously created folder:
+Second command used to verify, that content in particular folder matches file sizes and hashes from previously created file:
 
 ```text
 %%%% HASHDEEP-1.0
