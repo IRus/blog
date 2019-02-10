@@ -9,8 +9,12 @@ DefaultContentLanguage: en
 languages:
   en:
     weight: 1
+    params:
+      emoji: ":gb:"
   ru:
     weight: 2
+    params:
+      emoji: ":ru:"
 
 params:
   description: "Kotlin, Programming, Thoughts, Travels."
