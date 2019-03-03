@@ -112,7 +112,7 @@ Frontend:
 
 ## Certifications
 
-### Courses and Certifications
+### Courses
 
 * [Coursera - Machine Learning](https://www.coursera.org/learn/machine-learning)
 * [10gen - MongoDB for Developers](https://s3.amazonaws.com/edu-cert.10gen.com/downloads/0235a75717f04884949bd1516d7b2791/Certificate.pdf)
@@ -140,6 +140,15 @@ Frontend:
 * Hexlet: Javascript
 * Javascript.ru - Webpack Screencast
 * БГУИР-IBA: Software architecture and design patterns
+
+### Certifications
+
+<table>
+    <tr>
+        <td width="50"><a href="10gen-mongodb.pdf"><img src="10gen-mongodb.png" alt="Certificate"/></a></td>
+        <td width="50"><a href="coursera-kotlin.pdf"><img src="coursera-kotlin.png" alt="Certificate"/></a></td>
+    </tr>
+</table>
 
 #### 2019
 
