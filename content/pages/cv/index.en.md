@@ -153,6 +153,7 @@ Frontend:
 #### 2019
 
 * [Kotlin Koans](https://stepik.org/course/4222/syllabus)
+* [Kotlin for Java Developers](https://www.coursera.org/learn/kotlin-for-java-developers)
 
 ## Profiles
 
