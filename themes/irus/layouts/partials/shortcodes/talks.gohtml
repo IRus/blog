@@ -1,0 +1,10 @@
+<h2>Speaker</h2>
+
+{{ range $.Site.Data.talks }}
+    <h3>{{ .year }}</h3>
+    <ul>
+        {{ range .talks }}
+            <li><a href="{{ .link }}" title="{{ .date }}">{{ .title }}</a> - {{ .description }}</li>
+        {{ end }}
+    </ul>
+{{ end }}

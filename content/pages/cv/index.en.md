@@ -280,28 +280,7 @@ Implementation of SPA using Backbone, Node.js and other:
 * jQuery  
 * Bootstrap
 
-## Speaker
-
-* [Java Professionals BY: Meetup #2](https://www.facebook.com/events/1509539712618583/ "November 12, 2014") – The first rakes of Java 8
-* [Java Professionals BY: Meetup #4](https://www.facebook.com/events/788805571203192/ "March 25, 2015") – Introducing WebSockets
-* [JET Conf #2](http://jetconf.by/#/ "April 25, 2016") – The Darkside of Kotlin [Видео](https://www.youtube.com/watch?v=fZXQjy8sdok&index=3&list=PLeI8rYvNSwbU61n-Cdkz7-kEu-D3UX77Z)
-* [Specific Java Day](https://events.dev.by/java-saturday "October 17, 2015") [Facebook](https://www.facebook.com/events/1082289785116781) – The future of Java development (Kotlin)
-* [Java Professionals BY #8](https://www.facebook.com/events/1682509135338180/ "February 16, 2016") – Kotlin 1.0
-* [Belarus Kotlin User Group Meetup #1](https://bkug.by/2016/03/25/otchet-o-bkug-1/ "March 24, 2016") – Livecoding: Kotlin In Practice
-* [Belarus Kotlin User Group Meetup #2](https://bkug.by/2016/10/01/otchet-o-bkug-2/ "September 29, 2016") – Introduction in Asynchronous Computations
-* [Epam's Kotlin Tech Talk](https://events.epam.com/events) – Kotlin Puzzlers
-* [Java Professionals BY: Meetup #11](http://jprof.by/post/anons-meetup-11/ "November 3, 2016") – Упрощаем разработку и деплой с Bootique
-* [JET Conf #3](http://jetconf.by/#/ "November 18, 2016") – Introduction in Bootique
-* [JUG Latvia – Kotlin Night](https://jug.lv/ "December 15, 2016") – Kotlin for Java Developers
-* [JUG Latvia – Kotlin Night](https://jug.lv/ "December 15, 2016") – Introduction in Bootique and Kotlin Gradle
-* [Google Developer Group (GDG) Riga](https://www.meetup.com/GDG-Riga/ "December 17, 2016") – Coding Dojo: Kotlin Saturday
-* [f(by) 2016](http://fby.by/) – FullStack Web with Kotlin
-* [Minsk JS #2](https://minskjs.timepad.ru/event/479052/ "May 19, 2017") – Kotlin for Frontend Development
-* [Финтех митап от Сбертеха и Apps4All](http://sbertech.apps4all.ru/ "June 15, 2017") – Почему Kotlin? [Slides](https://goo.gl/lSOjHU)
-* [GDG DevFest 2017 Kaliningrad](http://gdg.kantiana.ru/ "October 14, 2017") - [Видео](https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn)
-* [Qiwi Server Party](https://www.youtube.com/watch?v=2ZT5eQpQwH4 "March 15, 2018")
-* [Leroy Merlin: Kotlin Meetup](https://www.youtube.com/watch?v=2ZT5eQpQwH4 "March 15, 2018")
-* [Kotlin Night Kyiv 2018](https://2event.com/events/1235410 "March 24, 2018")
+{{% talks %}}
 
 ## Organizer
 

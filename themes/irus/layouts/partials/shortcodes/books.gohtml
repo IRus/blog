@@ -1,7 +1,7 @@
 {{ range $.Site.Data.books }}
-    <h2>{{ .year.value }}</h2>
+    <h2>{{ .year }}</h2>
     <ul>
-        {{ range .year.books }}
+        {{ range .books }}
             <li>{{ .name }} - <b>{{ .author }}</b></li>
         {{ end }}
     </ul>

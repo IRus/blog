@@ -1,0 +1,94 @@
+- year: 2014
+  talks:
+    - title: "Java Professionals BY: Meetup #2"
+      link: "https://www.facebook.com/events/1509539712618583/"
+      date: November 12, 2014
+      description: "The first rakes of Java 8"
+- year: 2015
+  talks:
+    - title: "Java Professionals BY: Meetup #4"
+      link: https://www.facebook.com/events/788805571203192/
+      date: March 25, 2015
+      description: "Introducing WebSockets"
+    - title: "Specific Java Day"
+      link: https://events.dev.by/java-saturday
+      date: October 17, 2015
+      description: >
+        The future of Java development (Kotlin)
+- year: 2016
+  talks:
+    - title: "Java Professionals BY #8"
+      link: https://www.facebook.com/events/1682509135338180/
+      date: February 16, 2016
+      description: Kotlin 1.0
+    - title: "JET Conf #2"
+      link: https://www.youtube.com/watch?v=fZXQjy8sdok&index=3&list=PLeI8rYvNSwbU61n-Cdkz7-kEu-D3UX77Z
+      date: April 25, 2016
+      description: The Darkside of Kotlin
+    - title: "Belarus Kotlin User Group Meetup #1"
+      link: https://bkug.by/2016/03/25/otchet-o-bkug-1/
+      date: March 24, 2016
+      description: "Livecoding: Kotlin In Practice"
+    - title: "Belarus Kotlin User Group Meetup #2"
+      link: https://bkug.by/2016/10/01/otchet-o-bkug-2/
+      date: September 29, 2016
+      description: "Introduction in Asynchronous Computations"
+    - title: "Epam's Kotlin Tech Talk"
+      link: https://events.epam.com/events
+      date: October 3, 2016
+      description: "Kotlin Puzzlers"
+    - title: "Java Professionals BY: Meetup #11"
+      link: http://jprof.by/post/anons-meetup-11/
+      date: November 3, 2016
+      description: "Easy development and deploy with Bootique"
+    - title: "JET Conf #3"
+      link: http://jetconf.by/#/
+      date: November 18, 2016
+      description: Introduction in Bootique
+    - title: "f(by) 2016"
+      link: http://fby.by/
+      date: December 10, 2016
+      description: FullStack Web with Kotlin
+    - title: "JUG Latvia – Kotlin Night"
+      link: https://jug.lv/
+      date: December 15, 2016
+      description: Kotlin for Java Developers
+    - title: "JUG Latvia – Kotlin Night"
+      link: https://jug.lv/
+      date: December 15, 2016
+      description: Introduction in Bootique and Kotlin Gradle
+    - title: "Google Developer Group (GDG) Riga"
+      link: https://www.meetup.com/GDG-Riga/
+      date: December 17, 2016
+      description: "Coding Dojo: Kotlin Saturday"
+- year: 2017
+  talks:
+    - title: "Minsk JS #2"
+      link: https://minskjs.timepad.ru/event/479052/
+      date: May 19, 2017
+      description: Kotlin for Frontend Development
+    - title: "Fintech meetup from SberTech and Apps4All"
+      link: http://sbertech.apps4all.ru/
+      date: June 15, 2017
+      description: Why Kotlin?
+    - title: "GDG DevFest 2017 Kaliningrad"
+      link: http://gdg.kantiana.ru/
+      date: October 14, 2017
+      description: Kotlin Coroutines
+      video: https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn
+- year: 2018
+  talks:
+    - title: Qiwi Server Party
+      link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+      date: March 15, 2018
+      description: Review of Kotlin Ecosystem
+      video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+    - title: "Leroy Merlin: Kotlin Meetup"
+      link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+      date: March 15, 2018
+      description: Review of Kotlin Ecosystem
+      video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+    - title: Kotlin Night Kyiv 2018
+      link: https://2event.com/events/1235410
+      date: March 24, 2018
+      description: Review of Kotlin Ecosystem
