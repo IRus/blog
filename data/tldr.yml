@@ -1,0 +1,355 @@
+# * [Douglas Hawkins — Understanding the Tricks Behind the JIT](https://www.youtube.com/watch?v=oH4_unx8eJQ)
+# * [Alvaro Hernandez — Java & PostgreSQL](https://www.youtube.com/watch?v=DAxSGBWGZ1M)
+# * [Евгений Борисов — Spring Puzzlers: второй сезон](https://www.youtube.com/watch?v=BFEgLtFLdRI)
+
+conferences:
+  - name: "Lock-Free Algorithms for Kotlin Coroutines"
+    talks:
+      - title: Roman Elizarov — Lock-Free Algorithms for Kotlin Coroutines (Part 1)
+        favorite: true
+        link: https://www.youtube.com/watch?v=W2dOOBN1OQI
+        description: >
+          * Описывает алгоритм Lock-Free DoubleLinkedList: интересный концепт "помощи", и "линериализации" алгоритма.
+      - title: Roman Elizarov — Lock-Free Algorithms for Kotlin Coroutines (Part 2)
+        favorite: true
+        link: https://www.youtube.com/watch?v=iQsN_IDUTSc
+        description: >
+          * применяет этот лист для создания канала в Kotlin корутинах
+
+          * описывает алгоритм Double Compare Single-Swap необходимый для реализации `select` на каналах
+
+          * описывает алгоритм Compare-And-Swap-N-words
+    description: >
+      ps. Бедные студенты, у них нету возможности пересмотреть эти видео два-три раза прямо на лекции. Конечно можно посмотреть лекцию, прийти домой, дождаться когда видео опубликуют и пересмотреть. Но лучше когда есть возможность отматать назад, все-таки сложно. Даже **Никита Коваль — Как устроены каналы в корутинах в Kotlin** кажется был не таким сложным.
+  - name: KotlinConf 2018
+    playlist: https://www.youtube.com/playlist?list=PLQ176FUIyIUbVvFMqDc2jhxS-t562uytr
+    talks:
+      - title: KotlinConf 2018 - Conference Opening Keynote by Andrey Breslav
+        link: https://www.youtube.com/watch?v=PsaFVLr8t4E
+        favorite: true
+        description: Конечно стоит смотреть, Андрей рассказывает о настоящем и будущем Kotlin;
+  - name: JUG.RU 2019
+    playlist: https://www.youtube.com/watch?v=0H0mhiJLR7k&list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
+    talks:
+      - title: "Александр Белокрылов — Создавая дистрибутив OpenJDK"
+        link: https://www.youtube.com/watch?v=ClENwenPkrw
+        favorite: true
+        description: >
+          Описывает процесс и трудности создания дистрибутива OpenJDK. Оказывается что BellSoft делает дистрибутив для Intellij Idea. Обязательно к просмотру!
+  - name: Joker 2018
+    playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b_DvLWtURPD0Dz2NZil55XI
+    talks:
+      - title: Никита Коваль — Как устроены каналы в корутинах в Kotlin
+        link: https://www.youtube.com/watch?v=eZshP8zPSFo
+        favorite: true
+        description: >
+          Никита сравнил каналы в Go Lang и новую реализацию в Kotlin. Много деталей реализации: send, receive, select, про select я не понял с первого раза, буду пересматривать;
+      - title: Павел Финкельштейн — Котлин — 2 года в продакшне и ни единого разрыва
+        link: https://www.youtube.com/watch?v=nCDWb7O1ZW4
+        favorite: true
+        description: >
+          доклад который рассказывает про опыт Kotlin, проблемы при использовании Kotlin с различными Java библиотеками, если вы уже разрабатывали на Kotlin реальные приложения - можете смело пропускать доклад;
+      - title: Евгений Мандриков — Java 4..11, Kotlin, Code Coverage и их лучший друг — байткод
+        link: https://www.youtube.com/watch?v=89dSBMxaX_k
+        favorite: true
+        description: >
+          как выглядит байткод разного кода на Java (и чуть-чуть на Kotlin), и как JaCoCo с этим живет;
+      - title: Олег Шелаев — Компилируем Java ahead of time с GraalVM
+        link: https://www.youtube.com/watch?v=tPezgDSD1Bk
+        favorite: true
+        description: >
+          очень интересный доклад который рассказывает про GraalVM с примерами кода, и кое-какими бенчмарками. Рассказывает об ограничениях платформы в том числе, обязательно стоит посмотреть если вам интересно создать бинарник для Java приложения;
+      - title: Круглый стол с организаторами Joker
+        link: https://www.youtube.com/watch?v=tEsrFFRZM-w
+        description: >
+          Как члену ПК различных конференций и оранизатору митапов было интересно послушать про кишки Joker;
+      - title: Тагир Валеев — Pattern matching и его воображаемые друзья
+        link: https://www.youtube.com/watch?v=qurG_J81_Cs
+        description: >
+          Тагир рассказал про ожидаемый Pattern Matching в Java и фичи который он за собой тянет, какие плюсы и минусы и особенности впихивания невпихуемого в Java. В двух словах будет совместимо и удобно, но совсем не консистентно, т.е. Java станет еще более лапшевидной. Непонятны только его шуточки в сторону Kotlin, вроде взрослый человек, понимает что есть разные подходы со своими компромисами, а позволяет себе детское поведение;
+      - title: Venkat Subramaniam — Don't walk away from complexity, run
+        link: https://www.youtube.com/watch?v=aCO1oORAdCU
+        description: >
+          Венкат рассказал несколько историй, пару всем известных мыслей, никаких откровений как и каких-то глубоких знаний доклад не принес;
+      - title: Егор Бугаенко — Не думайте о качестве, думайте о скорости
+        link: https://www.youtube.com/watch?v=Itr7waZn0q8
+        description: >
+          Егор как бы говорит нам, ~~покупайте мои книжки и пользуйтесь моими тулами~~, используйте различные интрументы отслеживания качества и в своем стиле возводит это в абсолют;
+      - title: Дмитрий Александров — Microprofile io - не Спрингом единым
+        link: https://www.youtube.com/watch?v=iW_W1sKNjMs
+        description: >
+          рассказ о том что есть microprofile в java ee мире, и что это даже как-то работает. Обзор возможностей;
+      - title: Юрий Артамонов — Jlink и Custom Runtime Image — мастерская Франкенштейна
+        link: https://www.youtube.com/watch?v=cHfHt2xJPLU
+        description: >
+          рассказ о том, как хачили jar файлы, добавляя туда `module-info` чтобы заставить работать jlink;
+      - title: Владимир Плизга — Spring Boot 2 - чего не пишут в release notes
+        link: https://www.youtube.com/watch?v=8jNXZXdb3no
+        description: >
+          рассматриваются типичные спринго-проблемы;
+      - title: Кирилл Толкачёв и Максим Гореликов — Micronaut vs Spring Boot, или Кто тут самый маленький
+        link: https://www.youtube.com/watch?v=mkxAxGaShpg
+        description: >
+          Сравниваю то что не так легко сравнить на примере простого приложения;
+      - title: Сергей Мельников — Профилируем черного лебедя с помощью Intel Processor Trace
+        link: https://www.youtube.com/watch?v=Cn4bw7cE68w
+        description: >
+          интересный хардкорный доклад про то как профилировать Java код, самое главное что докладчик рассказывает очень просто достаточно сложную тему;
+      - title: Барух Садогурский и Тагир Валеев — Java Puzzlers NG S04
+        link: https://www.youtube.com/watch?v=7PnYBYL9pnc
+        description: >
+          идеально смотреть перематывая с вопроса на ответ, потому что дисскуссии с залом не слышно, а их размышления не сильно интересны, ну и в целом пазлеры уже не те;
+      - title: Андрей Курпатов — Новая реальность цифровой цивилизации
+        link: https://www.youtube.com/watch?v=ePK82v0d6W8
+        description: >
+          Узнал про [Синдром дефицита внимания и гиперактивности](https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BD%D0%B4%D1%80%D0%BE%D0%BC_%D0%B4%D0%B5%D1%84%D0%B8%D1%86%D0%B8%D1%82%D0%B0_%D0%B2%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F_%D0%B8_%D0%B3%D0%B8%D0%BF%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D1%81%D1%82%D0%B8) и чувствую что сам ему подвержен;
+  - name: Без Слайдов
+    playlist: https://www.youtube.com/channel/UCsZx0q0zsObxo9Xvsf-CklQ
+    talks:
+      - title: Максим Шафиров, JetBrains
+        link: https://www.youtube.com/watch?v=YJd0-NLb9DA
+        favorite: true
+        description: >
+          Интервью с CEO JetBrains. Про то, как Idea чуть не закрыли. История языка Котлин (~30:00). Если вам интерсестен JetBrains можно послушать.
+      - title: Роман Поборчий, poborchy.ru
+        link: https://www.youtube.com/watch?v=4vYJRoA0n80
+        description: >
+          Разговор про то как делать доклады на конференциях. Обязательно тем, кто делает технические доклады.
+  - name: JVM Language Summit 2016
+    playlist: https://www.youtube.com/watch?v=QnMDsI2GbOc&index=1&list=PLX8CzqL3ArzUY6rQAQTwI_jKvqJxrRrP_
+  - name: f(by) 2015
+    playlist: https://www.youtube.com/playlist?list=PLtAOYbbqpTmxg5fTJK7e8ZXdGzYLROsRm
+  - name: f(by) 2016
+    playlist: https://www.youtube.com/playlist?list=PLpVeA1tdgfCA1qKPJUXkwhEDK3dnWhYXf
+  - name: Frontend Conf 2016
+    playlist: https://www.youtube.com/watch?v=dot5v3LUsq4&feature=youtu.be&list=PLMBnwIwFEFHcJpfTM3YZVolk80kOvnpSm
+  - name: FrontTalks
+    playlist: https://www.youtube.com/watch?list=PLKaafC45L_SRke8G1qiE0ZTJovI0FYKRw&v=h10qZGq36DE
+  - name: Я.Субботник по разработке интерфейсов 2018
+    playlist: https://www.youtube.com/playlist?list=PLKaafC45L_STEvOoLl_XLVZIX8Mek1L1Z
+    talks:
+      - title: Ревью  как устроена система оценки сотрудников в Яндексе – Сергей Бережной
+        link: https://www.youtube.com/watch?v=zZgSsZScqEU
+        description: >
+          Нужно оценивать в сравнении, и нужно распределять блага неравномерно, т.е. в команде/отделе не должно получится что все середнечки, а должны быть кто получит больше, и те кто получит меньше
+      - title: Мутационное тестирование – Евгений Сорокин
+        link: https://www.youtube.com/watch?v=hmTzLa8CCWM
+        description: >
+          "Мутационное тестирование" или "Обзор Stryker", делаем мутантов, запускаем тесты. "Sandbox - это такая песочница" Цитаты великих
+  - name: Voxxed Days Minsk 2018
+    playlist: https://www.youtube.com/playlist?list=PLWARrxeQHprj82kemxNtlZOHuJqeqEd5q
+  - name: "Linux Piter #1"
+    playlist: https://www.youtube.com/watch?v=XYTZnWQdwqA&list=PLfHPKHYskx5JTiflrYs52JfkSY8C2JE03
+  - name: "Linux Piter #2"
+    playlist: https://www.youtube.com/watch?v=4_7WhOSAUF4&list=PLfHPKHYskx5Kal5_U2LlZa5Wq5ZJBGNAk
+  - name: Kotlin Night Kiev 2018
+    playlist: https://www.youtube.com/playlist?list=PL3KbYEzdM-Zs1uD6bjkThzs5O2tpOjqWa
+  - name: ReactRally
+    playlist: https://www.youtube.com/channel/UCXBhQ05nu3L1abBUGeQ0ahw
+  - name: React Conf 2017
+    playlist: https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0
+  - name: Mozilla Conf
+    playlist: https://www.youtube.com/watch?v=gAojJh2h9pI&feature=youtu.be&list=PLMBnwIwFEFHeIfWudv1nLTTkMUmlwLNON
+  - name: MobileOptimized’ 2016
+    playlist: https://dev.by/lenta/main/mobile-optimized-2016-9-vidoes-for-noncoders
+  - name: "Minsk JS #2"
+    playlist: https://www.youtube.com/watch?v=PwYWNMbgOz4&list=PL-whh3wS8xsKLNp3J7Jg9LkWBbbx5T1Q6
+  - name: "JUG.LV"
+    talks:
+      - title: Kotlin for Java Developers by Ruslan Ibragimov
+        link: https://www.youtube.com/watch?v=kE9b0kk__xQ
+        description: ""
+      - title: Android & Kotlin by Sergejs Luhmirins
+        link: https://www.youtube.com/watch?v=0YJlLGrTFAU
+        description: ""
+  - name: GoTo
+    playlist: https://www.youtube.com/user/GotoConferences/playlists
+  - name: JavaZone
+    playlist: https://vimeo.com/javazone/videos/
+  - name: HolyJS
+    playlist: https://www.youtube.com/watch?v=ZoQDuKmw5ic&list=PL8sJahqnzh8JST_ZwTcGG1FHGgKBMcpn6
+  - name: JUG.EKG Mar 2019
+    talks:
+      - title: "Андрей Аркаев (Naumen) - Хватит это терпеть: внедряем свеженький SpringBoot в большой legacy-проект"
+        link: https://www.youtube.com/watch?v=75OSYDyzRQ4
+        description: >
+          Если работали со Spring Boot - не смотрите там ничего нового и интересного, если не работали со Spring Boot - тоже не смотрите, там почти все рассмотренные решения очень спорные;
+      - title: "Петр Попов (Tinkoff.ru) — Построение микросервисного приложение на Netflix OSS"
+        link: https://www.youtube.com/watch?v=89GHaqu3SBE
+        description: >
+          Пару слов про то как называется гейтвейт и сервис дискавери в нетфликс, и дальше уныленький лайв кодинг;
+      - title: "Владимир Янченко (Naumen) - Большое Enterprise приложение для маленькой такой компании"
+        link: https://www.youtube.com/watch?v=gMPReCiJ9WU
+        description: >
+          Толковый доклад про архитектуру решения, и нюансы типо работы с докером и мониторингом.
+  - name: "Kotlin Taganrog Event #1"
+    playlist: https://www.youtube.com/watch?v=gjVv7P8T4IY&list=PLyOSTUP5qHKcXOcvJYm5RY1b6keXXcEnW
+    description: >
+      * Десерт от Kotlin — синтаксический сахар - Денис Александров. Доклад мне не понравился, примеры несколько надуманные, тревоги раздуты. Можно разве что подсмотреть различные набросы на Kotlin для жарких дискуссий.
+
+      * Kotlin vs. Swift - Виктор Петренко. Сравнение неплохое, хотя и кажется что несколько поверхностное. Вывод правильный: it depends.
+
+      * Исключения в Kotlin и их особенности - Алексей Шафранов. Try/Catch, Try Monad. Если знаете что можно не смотреть :)
+
+      * Корутины. Гибкое асинхронное программирование в Kotlin - Андрей Терещенко - Слайдов не видно, запись бесполезная.
+  - name: React Conf 2018
+    playlist: https://www.youtube.com/playlist?list=PLPxbbTqCLbGE5AihOSExAa4wUM-P42EIJ
+    talks:
+      - title: React Today and Tomorrow - Sophie Alpert and Dan Abramov - React Conf 2018
+        link: https://www.youtube.com/watch?v=V-QO-KO90iQ
+        description: >
+          Очень интересная идея **хуков** которая возможно станет частью реакт, можете пропустить доклад и сразу перейти к [документации](https://reactjs.org/docs/hooks-intro.html)
+  - name: JEEConf 2017
+    playlist: https://www.youtube.com/playlist?list=PLYj3Bx1JM6Y6wNFtj6OAKkRlWAZmCFbTI
+  - name: "Frontend Union Conf 2016"
+    playlist: "https://www.youtube.com/channel/UCKY4rlnOOWp_FfGrIjQVmtQ/feed"
+    talks:
+      - title: "Lessons learned running JS meetups by Oleg Podsechin"
+        link: https://www.youtube.com/watch?v=wNZTLcutqKk
+        description: >
+          Неплохой доклад для организаторов митапов, всегда интересно послушать чужой опыт.
+  - name: HighLoad++ 2016
+    playlist: https://www.youtube.com/playlist?list=PLH-XmS0lSi_yLq2XS2Y1DScY6NPbQj4Dt
+  - name: HighLoad++ 2012-2016
+    playlist: https://www.youtube.com/user/profyclub/
+  - name: Java Day 2016 Playlist
+    playlist: https://www.youtube.com/playlist?list=PLpVeA1tdgfCAliJE9Qqb48rIcLlgvikUH
+  - name: JPoint 2018
+    playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b_b3GZR4CCOy3rxNfvKi9ns
+    talks:
+      - title: Алексей Зиновьев — Тонкости машобуча вместе со Spark ML
+        link: https://www.youtube.com/watch?v=rkCfyPxTUIM
+        description: >
+          не все выступления этого докладчика мне нравятся, но это на редкость интересное и удачное как мне кажется. Алексей взял задачу постройки модели шанса выжить в Титанике и решал её с помощью SparkML
+      - title: Олег Чирухин — Graal, Value Types, Loom и прочие ништяки
+        link: https://www.youtube.com/watch?v=hnadkXBIC1k
+        description: >
+          к сожалению какой-то поток мыслей который тяжело слушать и воспринимать. Обо все и не о чем. Можно скипать
+  - name: JPoint 2017
+    playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b8c09AKImmAISiEI6vPefON
+  - name: JPoint 2016
+    playlist: https://www.youtube.com/watch?v=hpiq__PG4sQ&list=PLO9lWyBRzDwhu-JiHk8x_Qemxdv1RwnJp
+  - name: Joker 2016
+    playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b-vNYciZHVDYwrOhpQRE-DT
+  - name: Jet Autumn 2016
+    playlist: https://www.youtube.com/playlist?list=PLeI8rYvNSwbVf7bX-3ANb5LWrcc1liKCm
+    talks:
+      - title: "Axel Fontaine - Immutable Infrastructure: Rise of the Machine Images"
+        link: https://www.youtube.com/watch?v=4TayWeV0TGU
+        description: >
+          Можно разделить доклад на несколько частей: От собстсвенного датацентра, до облака. Оптимизация размера виртуальной машины. Boxfuse demo. Проблемы в облаках и их решения с подходом используемом в Boxfuse. Container vs AMI
+  - name: Jet Spring 2016
+    playlist: https://www.youtube.com/playlist?list=PLeI8rYvNSwbWDtYQ_Qpnd92qWhdNk6aQC
+  - name: GeekOut 2016
+    playlist: http://2016.geekout.ee/videos/
+  - name: DEV Labs 2016
+    playlist: http://www.soft-labs.net/ru/archive/page1.php?clear_cache=Y
+    talks:
+      - title: "Искусство быстрого старта: maven, Spring Roo, JHipster"
+        link: http://www.slideshare.net/SashaSoleev/dev-labs-2016-64028314
+        description: ""
+      - title: "Микросервисы: первая кровь"
+        link: http://www.slideshare.net/SashaSoleev/dev-labs-2016-64028314
+        description: ""
+      - title: "Конфигурирование Spring-приложений"
+        link: http://www.slideshare.net/SashaSoleev/dev-labs-2016-spring
+        description: ""
+  - name: Strange Loop 2016
+    playlist: https://www.youtube.com/playlist?list=PLcGKfGEEONaDvuLDFFKRfzbsaBuVVXdYa
+  - name: JavaOne 2015
+    playlist: https://www.reddit.com/r/java/comments/3requx/javaone_2015_sessions/
+  - name: Web Standards Days 2015
+    playlist: https://www.youtube.com/watch?v=f1DVxtjiBc4&feature=youtu.be&list=PLMBnwIwFEFHeaOuHqSEpZPhcFkRSrunE-
+    description: "[Schedule](https://wsd.events/2015/10/31/#schedule-1)"
+  - name: GeekOut 2014
+    talks:
+      - title: Contravariance is the Dual of Covariance Implies Iterable is the Dual of Observable (Making Money Using Math) by Erik Meijer
+        link: https://vimeo.com/98922027
+        description: >
+          Все сайдэффекты, перестаньте писать на руби и джаваскрипт. Очень классный доклад.
+  - name: Highload++ 2014
+    playlist: https://www.youtube.com/playlist?list=PLH-XmS0lSi_ysv-aIqKQZa1mCKy6WZACv
+    talks:
+      - title: Анатомия веб-сервиса, Андрей Смирнов (ex-Skype)
+        link: https://vimeo.com/117154389
+        description: >
+          Достаточно капитанский доклад про процессы, потоки, кооперативную многозадачность, и немного про сетевое взаимодействие. Не ведитесь на вкусное название, или "именитого" спикера, доклад не стоит своего времени;
+      - title: Как устроен поиск / Андрей Аксенов (Sphinx)
+        link: https://vimeo.com/151817227
+        description: >
+          Несмотря на странный стиль докладчика интересный доклад с интересным выводом. Думаю стоить посмотреть тем, кто начинает работать с полнотекстовым поиском;
+      - title: Браузеры наши меньшие, или Нам нужно серьёзно поговорить / Вадим Макеев
+        link: https://vimeo.com/151208337
+        description: >
+          Вадим как всегда ноет как все плохо, и рассказывает как правильно писать сайты. Защищает оперу мини. Верстальщикам, и фронтендерам посвящается. Если вы не знаете про что обычно говорит Вадим - вам стоит посмотреть;
+      - title: "Docker в работе: взгляд на его использование в Badoo через год / Турецкий Ант"
+        link: https://vimeo.com/150059803
+        description: >
+          Хороший доклад с обзором граблей и реального опыта использования.
+  - name: DEVCLUB.EU
+    playlist: https://www.youtube.com/channel/UCLq7vcHtwDtx4m9ZUrgxEBA
+    talks:
+      - title: 2016.11.30 Юрий Тимошин - Jenkins pipeline
+        link: https://www.youtube.com/watch?v=-Dxm3jhk-W0
+        description: >
+          Ctrl+C -> Ctrl+V груви DSL в UI дженкинса. Докладчик в конце сказал мол дженкис не нужен, перестаньте им пользоваться)
+      - title: "2016.11.30 Илья Хямяляйнен - Concourse CI: «от винта!» или не Дженкинсом единым"
+        link: https://www.youtube.com/watch?v=JtbR2bTmjkI
+        description: >
+          Доклад понравился, если ищете себе CI - смотреть обязательно. Что было в докладе: Базовое описание Concourse, пример функциональных тестов, демо.
+      - title: "2016.11.30 Илья Ливенсон - Riigipilv: Начало"
+        link: https://www.youtube.com/watch?v=WVzzRvtK24M
+        description: >
+          Про Эстонское гос облако, рассказывается о специфике работы с государством, цели, проблемы, идеи. Большой пользы нету, но сам доклад качественный
+      - title: 2018.09.27 Андрей Солнцев - WTF Connection pools
+        link: https://www.youtube.com/watch?v=xiBd5kTOoYo
+        description: >
+          Доклад-обзор настроек database connection pool (c3p0, HikariCP), вы можете почитать доку к своему pool ([например](https://github.com/brettwooldridge/HikariCP)) и сэкономить время :)
+      - title: "2018.11.28 Андрей Солнцев  - Чем различаются интернет-банк физиков и юриков"
+        link: https://www.youtube.com/watch?v=BB-HCwQZj8Y
+        description: >
+          Доклад про то как физики и юрики реагируют на одни и теже интерфейсные решения, плюс немного баек в конце.
+      - title: "2019.02.28 Алексей Фёдоров  - Оборудование для конференций и митапов - видео, звук, свет, трансляция"
+        link: https://www.youtube.com/watch?v=ZJPFFjfZKDg
+        description: >
+          Отличный доклад, теперь понятнее как организовать запись митапа.
+      - title: 2019.02.28 Дмитрий Тучс  - Jupiter - параллельная реальность
+        link: https://www.youtube.com/watch?v=LuLBL-DHTAQ
+        description: >
+          Обзор junit 5 с небольшим уклоном в параллельный запуск тестов и UI тесты. Мне не очень понравилось
+      - title: "2019.02.28 Руслан Ахметзянов — Имеющий уши да улучшит: работаем с фидбэком правильно"
+        link: https://www.youtube.com/watch?v=e7pBN15XmPk
+        description: >
+          честно говоря не вынес ничего полезного и нового, в целом суть: избегайте когнитивных искажений, пользуйтесь математикой, думайте и придумывайте мотивацию для написания фидбека
+  - name: Virtual JUG
+    playlist: https://www.youtube.com/channel/UCBxVkwrVRo8BnQ1g96MHZ0Q
+    talks:
+      - title: Extremely fast builds with Gradle
+        link: https://www.youtube.com/watch?v=4sXh5KtXXCY
+        description: >
+          Очевидные советы типо используйте демон, инкрементальную компилицию, континиус билды, etc. Потом зачем-то рассказывается про Composite Builds, и заканчивается кешем. Все примеры выполняются на "Hello, World!" и не совсем понятно как оно будет масштабироваться на большие проекты, с сложной конфигурацией
+  - name: SpringOne Platform 2018
+    playlist: https://www.youtube.com/playlist?list=PLAdzTan_eSPQsR_aqYBQxpYTEQZnjhTN6
+    talks:
+      - title: Getting Started with R2DBC
+        link: https://www.youtube.com/watch?v=qwF6v6FN_Uc
+        description: >
+          18 минут о том как запустить проект с реативным репозиторием, откройте 17 минуту и посмотрите код
+  - name: JVM Language Summit 2018
+    playlist: https://www.youtube.com/playlist?list=PLX8CzqL3ArzVnxC6PYxMlngEMv3W1pIkn
+    talks:
+      - title: Project Loom with Ron Pressler and Alan Bateman
+        link: https://www.youtube.com/watch?v=J31o0ZMQEnI
+        description: >
+          Continuation, Fiber. Попытка запустить существующий код поверх Fiber;
+  - name: java.ural.Meetup @1
+    playlist: https://www.youtube.com/channel/UCYKb31UxgsUv1qz0gHU3YSw/featured
+    talks:
+      - title: "Алексей Кирпичников - Высокопроизводительное Java-приложение в сердце стриминговой архитектуры"
+        link: https://www.youtube.com/watch?v=Birt7ctlLTM
+        description: >
+          рассказывают как сделали HTTP сервис на Java с Rapidoid который складывает метрики и логи в кафку, из которой потом уже графит и прочее вычитывает логи и метрики
+      - title: "Андрей Сталин, Сергей Ануфриев и Евгений Штыков - Асинхронное микросервисное взаимодействие"
+        link: https://www.youtube.com/watch?v=IFXnPmA5lJg
+        description: >
+          не смог смотреть, очень нудно и натянуто

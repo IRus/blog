@@ -1,0 +1,24 @@
+{{ range $.Site.Data.tldr.conferences }}
+    {{ if .playlist }}
+        <h2><a href="{{ .playlist }}">{{ .name }}</a></h2>
+    {{ else }}
+        <h2>{{ .name }}</h2>
+    {{ end }}
+
+    {{ if .description }}
+        <p>{{ .description | markdownify }}</p>
+    {{ end }}
+
+    <ul>
+        {{ range .talks }}
+            <li>
+                {{ if .favorite }}
+                    ⭐️
+                {{ end }}
+                <a href="{{ .link }}">{{ .title }}</a>
+                <p>{{ .description | markdownify }}</p>
+            </li>
+        {{ end }}
+    </ul>
+
+{{ end }}

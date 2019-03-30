@@ -1,0 +1,46 @@
+{
+  "$id": "https://ruslan.ibragimov.by/data/tldr-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Definition of TL;DR; data file.",
+  "type": "object",
+  "properties": {
+    "conferences": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "playlist": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "talks": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "favorite": {
+                  "type": "boolean"
+                }
+              },
+              "required": ["title", "link", "description"]
+            }
+          }
+        },
+        "required": ["name"]
+      }
+    }
+  }
+}
+
