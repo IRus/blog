@@ -1,0 +1,36 @@
+{
+  "$id": "https://ruslan.ibragimov.by/data/books-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Definition of Books data file.",
+  "type": "array",
+  "items": {
+    "properties": {
+      "year": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "books": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "author": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "author"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
