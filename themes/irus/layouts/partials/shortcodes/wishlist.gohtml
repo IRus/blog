@@ -1,0 +1,9 @@
+<ul>
+{{ range where $.Site.Data.wishlist "done" "!=" "true" }}
+    {{ if .link }}
+        <li><a href="{{ .link }}">{{ .name }}</a> - {{ .description | markdownify }}</li>
+    {{ else }}
+        <li>{{ .name }} - {{ .description | markdownify }}</li>
+    {{ end }}
+{{ end }}
+</ul>

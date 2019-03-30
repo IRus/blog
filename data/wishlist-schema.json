@@ -1,0 +1,24 @@
+{
+  "$id": "https://ruslan.ibragimov.by/data/wishlist-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Definition of Wish List data file.",
+  "type": "array",
+  "items": {
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "link": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "done": {
+        "type": "boolean"
+      }
+    },
+    "required": ["name", "description"]
+  }
+}
+
