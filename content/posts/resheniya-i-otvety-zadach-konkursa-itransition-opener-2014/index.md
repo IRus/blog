@@ -290,8 +290,6 @@ public BigInteger count(int n)
 
 ### Задача 13.
 
-<img src="https://ruslan.ibragimov.by/wp-content/uploads/2014/03/opener-task-13.png" alt="opener-task-13" width="649" height="44" class="aligncenter size-full wp-image-705" srcset="https://ruslan.ibragimov.by/wp-content/uploads/2014/03/opener-task-13.png 649w, https://ruslan.ibragimov.by/wp-content/uploads/2014/03/opener-task-13-300x20.png 300w, https://ruslan.ibragimov.by/wp-content/uploads/2014/03/opener-task-13-624x42.png 624w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 61vw, (max-width: 1362px) 45vw, 600px" />
-
 ![task 13](opener-task-13.png)
 
 Ответ: `1101022201112112220002000110001011000200`
@@ -428,7 +426,7 @@ def add(a, b)
 end
 ```
 
-Ответ: 38503
+Ответ: `38503`
 
 ---
 
