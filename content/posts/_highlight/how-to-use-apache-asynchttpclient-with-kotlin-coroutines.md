@@ -135,7 +135,7 @@ suspend fun HttpAsyncClient.execute(request: HttpUriRequest): HttpResponse {
             }
 
             override fun cancelled() {
-                if (cont.isCancelled) returns
+                if (cont.isCancelled) return
                 cont.resumeWith(Result.failure(CancellationException("Cancelled")))
             }
 
