@@ -67,6 +67,11 @@
       link: https://minskjs.timepad.ru/event/479052/
       date: May 19, 2017
       description: Kotlin for Frontend Development
+    - title: "Java Day Minsk 2017"
+      link: https://javaday.by/
+      date: June 3, 2017
+      description: "Kotlin Coroutines: Asynchronous Programming Made Simple"
+      video: https://www.youtube.com/watch?v=2JnzWKyBGOk
     - title: "Fintech meetup from SberTech and Apps4All"
       link: http://sbertech.apps4all.ru/
       date: June 15, 2017
@@ -78,16 +83,16 @@
       video: https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn
 - year: 2018
   talks:
-    - title: Qiwi Server Party
+    - title: "Qiwi Server Party"
       link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
       date: March 15, 2018
       description: Review of Kotlin Ecosystem
       video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
     - title: "Leroy Merlin: Kotlin Meetup"
-      link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+      link: https://www.youtube.com/watch?v=CIqmtS-bfN8
       date: March 15, 2018
       description: Review of Kotlin Ecosystem
-      video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+      video: https://www.youtube.com/watch?v=CIqmtS-bfN8
     - title: Kotlin Night Kyiv 2018
       link: https://2event.com/events/1235410
       date: March 24, 2018
