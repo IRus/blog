@@ -83,6 +83,11 @@
       video: https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn
 - year: 2018
   talks:
+    - title: "Belarus Kotlin User Group Meetup #8"
+      link: https://bkug.by/2018/02/08/anons-bkug-8/
+      date: February 21, 2018
+      description: Ktor.io
+      video: https://www.youtube.com/watch?v=-8U0TvkIdu8
     - title: "Qiwi Server Party"
       link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
       date: March 15, 2018
@@ -93,7 +98,19 @@
       date: March 15, 2018
       description: Review of Kotlin Ecosystem
       video: https://www.youtube.com/watch?v=CIqmtS-bfN8
-    - title: Kotlin Night Kyiv 2018
+    - title: "Kotlin Night Kyiv 2018"
       link: https://2event.com/events/1235410
       date: March 24, 2018
       description: Review of Kotlin Ecosystem
+    - title: "Belarus Kotlin User Group Meetup #11"
+      link: https://bkug.by/2018/12/04/anons-bkug-11/
+      date: December 11, 2018
+      description: "R2DBC"
+      video: https://www.youtube.com/watch?v=uQsvxCmayhk
+- year: 2019
+  talks:
+    - title: "Belarus Kotlin User Group Meetup #12"
+      link: https://bkug.by/2019/01/19/anons-bkug-12/
+      date: January 28, 2019
+      description: "Undertow"
+      video: https://www.youtube.com/watch?v=go-NFlXGy7A
