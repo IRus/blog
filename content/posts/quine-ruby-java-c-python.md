@@ -1,6 +1,8 @@
 ---
 title: "Quine Ruby -> Java -> C# -> Python"
 date: 2013-04-20
+aliases: 
+  - "20-04-2013.quine-ruby-java-c-python"
 categories:
   - News
 ---
