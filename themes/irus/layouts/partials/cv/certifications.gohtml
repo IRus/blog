@@ -1,0 +1,12 @@
+<h3>Certifications</h3>
+
+<div class="notification is-light">
+    {{ range $.Site.Data.certifications }}
+        <h4>{{ .year }}</h4>
+        <ul>
+            {{ range .certifications }}
+                <li><a href="{{ .link }}">{{ .title }}</a></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+</div>

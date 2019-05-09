@@ -1,0 +1,166 @@
+{{ with .Site.Data.cv }}
+    <section class="hero is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    {{ .name }}
+                </h1>
+                <h2 class="subtitle">
+                    {{ .title }}
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <article class="media">
+                <figure class="media-left">
+                    <p class="image is-128x128">
+                        <img class="is-rounded" src="./photo.jpg" alt="Ruslan Ibragimov Photo"/>
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content is-medium">
+                        {{ .description | markdownify }}
+                        <hr>
+                    </div>
+                    <nav class="level is-mobile">
+                        <div class="level-left">
+                            <span class="level-item">
+                                Profiles:
+                            </span>
+                            {{ range .profiles }}
+                                <a class="level-item" href="{{ .url }}">
+                                    <span class="tag is-link">{{ .title }}</span>
+                                </a>
+                            {{ end }}
+                        </div>
+                    </nav>
+                    <nav class="level is-mobile">
+                        <div class="level-left">
+                            <span class="level-item">
+                                Languages:
+                            </span>
+                            {{ range .languages }}
+                                <span class="level-item">
+                                    <span class="icon" title="{{ .level }}">{{ emojify .name }}</span>
+                                </span>
+                            {{ end }}
+                        </div>
+                    </nav>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="cv tabs is-large">
+                <ul>
+                    <li class="is-active"><a data-tab=".experience">Experience</a></li>
+                    <li><a data-tab=".speaker">Speaker</a></li>
+                    <li><a data-tab=".certifications">Certifications</a></li>
+                    <li><a data-tab=".books">Books</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="experience is-hidden">
+        <section class="section">
+            <div class="container content is-medium">
+                <h3>Education</h3>
+                {{ range .education }}
+                    {{ if .show }}
+                        <div class="notification">
+                            <h4>{{ .where }} ({{ .time}})</h4>
+                            <p>{{ .description }}</p>
+                        </div>
+                    {{end}}
+                {{ end }}
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container content is-medium">
+                <h3>Experience</h3>
+                {{ range .experience }}
+                    <div class="notification is-company">
+                        <div class="columns">
+                            <div class="column is-company-logo is-2">
+                                <p class="image is-128x128">
+                                    <img src="{{ .company.logo }}" alt="{{ .company.name }}"/>
+                                </p>
+                            </div>
+                            <div class="column">
+                                <div class="content is-medium">
+                                    <h4>{{ .title }} @ <a href="{{ .company.link }}">{{ .company.name }}</a></h4>
+                                    {{ .description | markdownify }}
+                                </div>
+                            </div>
+                        </div>
+                        {{ range .projects }}
+                            {{ if .show }}
+                                <div class="notification">
+
+                                    <h5>
+                                        {{ if .link }}
+                                            <a href="{{ .link }}">{{ .name }}</a> ({{ .time }})
+                                        {{ else }}
+                                            {{ .name }} ({{ .time }})
+                                        {{ end }}
+                                    </h5>
+                                    <p>{{ .description | markdownify }}</p>
+                                    {{ if .team }}
+                                        <div class="tags">
+                                            <span class="tag">Team:</span>
+                                            {{ range .team }}
+                                                <span class="tag is-info">{{ . }}</span>
+                                            {{ end }}
+                                        </div>
+                                    {{ end }}
+                                    <div class="tags">
+                                        {{ range .tech }}
+                                            <span class="tag is-black">{{ . }}</span>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </div>
+        </section>
+    </div>
+{{ end }}
+
+<div class="speaker">
+    <section class="section">
+        <div class="container">
+            <div class="content is-medium">
+                {{ partial "cv/talks.gohtml" . }}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="certifications">
+    <section class="section">
+        <div class="container">
+            <div class="content is-medium">
+                {{ partial "cv/certifications.gohtml" . }}
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="books">
+    <section class="section">
+        <div class="container">
+            <div class="content is-medium">
+                {{ partial "cv/books.gohtml" . }}
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,13 @@
+<h3>Books</h3>
+
+<div class="notification">
+    {{ range $.Site.Data.books }}
+        <h4>{{ .year }}</h4>
+        <ul>
+            {{ range .books }}
+                <li>{{ .name }} - <b>{{ .author }}</b></li>
+            {{ end }}
+        </ul>
+    {{ end }}
+
+</div>

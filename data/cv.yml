@@ -1,0 +1,299 @@
+name: "Ruslan Ibragimov"
+title: "Senior Software Engineer"
+description: >
+  I have great experience in computer science. Every day i try to find new knowledge, technologies and study them. At work my goal - do perfect products, transfer my knowledge in team. I often speak at local meetups and attend to conferences. I understand software development process, and already use few software development methodologies& waterfall, scrum and kanban. I'm doing my best to write clean, maintainable code.
+
+
+  I will be happy to work with people like me: people that love technologies, software, hardware and cycling :D
+profiles:
+  - title: "StackOverflow"
+    url: "https://stackoverflow.com/users/1538877/irus"
+  - title: "GitHub"
+    url: "https://github.com/IRus"
+  - title: "Twitter"
+    url: "https://twitter.com/HeapyHop"
+languages:
+  - name: ":gb:"
+    level: "Intermediate"
+  - name: ":ru:"
+    level: "Native"
+education:
+  - time: "2009 - 2014"
+    where: "Belorussian State University of Informatics and Radioelectronics"
+    description: "Bachelor's Degree Electrical and Electronics Engineering"
+    show: true
+  - time: "1998 - 2009"
+    where: "Gymnasium №37"
+    description: "Mathematics and Physics"
+    show: false
+experience:
+  - time: "Dec 2017 - Present"
+    description: ""
+    company:
+      name: "IAC"
+      link: "https://www.iac.com/"
+      logo: "logos/iac.png"
+    title: "Senior Java Engineer"
+    projects:
+      - name: "Log data aggregation server"
+        show: false
+        time: "Dec 2018 - Feb 2019"
+        tech:
+          - "Kotlin"
+          - "Google Cloud Platform"
+          - "Scribe"
+          - "Thrift"
+        description: >
+          Replacement for [scribe](https://github.com/facebookarchive/scribe), written in async manner with Kotlin and Coroutines, uses Google Cloud Pub-Sub for stream ingestion.
+
+           Connector from Google Cloud Pub-Sub to Amazon Kinesis, for processing in legacy analytics system.
+  - time: "Aug 2016 - June 2019"
+    description: ""
+    company:
+      name: "ObjectStyle, LLC"
+      link: "https://www.objectstyle.com/"
+      logo: "logos/objectstyle.png"
+    title: "Full Stack Engineer"
+    projects:
+      - name: "ObjectStyle Recruiting System"
+        show: true
+        time: "Aug 2016 - June 2019"
+        tech:
+          - Kotlin
+          - React
+          - Redux
+          - RxJS
+          - Webpack
+          - Yarn
+          - TypeScript
+          - Jasmine
+          - Karma
+          - Gemini
+          - Nginx
+          - Gitlab
+          - GNU/Linux
+          - AWS
+          - Bootique
+          - Apache Cayenne
+          - PostgreSQL
+          - Gradle
+          - Undertow
+          - JUnit
+          - Mockk
+        team:
+          - "Natalia Brych"
+        description: >
+          Responsibilities: designing frontend, backend. CI/CD and DevOps
+      - name: "ObjectStyle CMS"
+        show: true
+        time: "Aug 2016 - June 2019"
+        team:
+          - "Evgeny Rugalev"
+          - "Anastasiya Zhdanovskaya"
+        tech:
+          - Kotlin
+          - React
+          - Redux
+          - RxJS
+          - Webpack
+          - Yarn
+          - TypeScript
+          - Jasmine
+          - Karma
+          - Gemini
+          - Nginx
+          - Gitlab
+          - GNU/Linux
+          - AWS
+          - Bootique
+          - Apache Cayenne
+          - PostgreSQL
+          - MariaDB
+          - Gradle
+          - Maven
+          - Tapestry
+          - Undertow
+          - Jetty
+          - JUnit
+          - Mockito
+          - Mockk
+        description: >
+          ObjectStyle.com CMS: rewriting from old technologies like tapestry with deployment to application server, to shiny new Bootique and rest APIs and standalone jar inside docker, e2e tests with gemini. Rewriting admin panel, add new features, optimize performance.
+      - name: "Bootique"
+        show: true
+        link: "https://bootique.io/"
+        time: "Aug 2016 - June 2019"
+        tech:
+          - Kotlin
+          - Flyway
+          - Travis CI
+          - Bootique
+          - Apache Cayenne
+          - Maven
+          - Undertow
+        description: >
+          Develop Bootique itself and their modules: wrote new modules: Undertow, Flyway, Logback-Sentry, Kotlin, etc, add new features to bootique core itself.
+          Use in internal projects, provide feedback to a team.
+  - time: "Mar 2016 - Present"
+    description: >
+      Found community, speak at events and organize them, build community around Kotlin in Belarus.
+      Building infrastructure for community to simplify event management and allow anyone to participate in event organization.
+    company:
+      name: "Belarus Kotlin User Group"
+      link: "https://bkug.by/"
+      logo: "logos/bkug.jpg"
+    title: "Community Organizer"
+  - time: "Oct 2014 - Present"
+    description: >
+      Speak at events and help organize them, build community.
+    company:
+      name: "Java Professionals By"
+      link: "https://jprof.by/"
+      logo: "logos/jprof.png"
+    title: "Community driver"
+  - time: "Feb 2014 - Present"
+    description: ""
+    company:
+      name: "Heapy"
+      link: "https://heapy.io/"
+      logo: "logos/heapy.svg"
+    title: "Chief 3 Procrastination 0fficer"
+    projects:
+      - name: "Heap"
+        show: true
+        link: "https://github.com/Heapy/wth2"
+        time: "Mar 2015 – Mar 2015"
+        tech:
+          - "Spring Boot"
+          - "Android Platform"
+        team:
+          - Hleb Albau
+          - Max Gergalov
+          - Vlad Gaevksiy
+        description: >
+          Realtime multiplayer game with geolocation. Built using Spring Boot, HTML5 and Android Platform.
+      - name: "Winny"
+        show: true
+        link: "http://terraview.io/"
+        time: "Feb 2014 – Apr 2014"
+        tech:
+          - NPM
+          - Sequelize
+          - Unit.js
+          - Backbone
+          - Underscore.js
+          - Leaflet
+          - jQuery
+          - Bootstrap
+        description: >
+          Vineyard Network Information System. Implementation of SPA using Backbone, Node.js and other.
+  - time: "Jan 2013 - Aug 2016"
+    description: >
+      Awards: Employee of the Month. Oct 2013, SD1, Itransition.
+    company:
+      name: "Itransition"
+      link: "https://www.itransition.com/"
+      logo: "logos/itransition.png"
+    title: "Team Lead, Full Stack Engineer"
+    projects:
+      - name: "iRietumu"
+        show: true
+        link: "http://www.rietumu.lv/"
+        time: "Sep 2015 – Aug 2016"
+        tech:
+          - Kotlin
+          - Spring Boot
+          - Angular 1.5
+          - Babel
+          - TypeScript
+          - Component Architecture
+          - BEM
+          - Karma
+          - Jasmine
+          - Gebish
+          - Webpack
+          - Gradle
+          - Nginx
+        team:
+          - Dmitry Pranchuk
+          - Maria Chmyreva
+          - Alexander Zenkovich
+          - Ignat Krishchik
+          - Pavel Nesterovich
+          - Maksim Iasinskii
+          - Lev Zaharevich
+          - Sergei Kuznecov
+        description: >
+          Design backend/frontend architecture for new internet bank website **iRietumu**. Lead team of 5 people.
+          Knowledge sharing, XP practises.
+      - name: "Enterprise Product Data Manager"
+        show: true
+        link: "http://fpx.com/"
+        time: "Sep 2014 – Sep 2015"
+        tech:
+          - Spring Boot
+          - SQL Server
+          - Hibernate
+          - Angular 1.3
+        team:
+          - Ilya Katlinsky
+        description: >
+          Backend and frontend development.
+          Spring Boot with deep diving in hibernate (multi-tenancy capabilities and dynamic schema) on backend and Angular on frontend.
+          Work in dedicated team.
+      - name: "Proactive Chat Rules Engine"
+        show: true
+        link: "https://www.bold360.com/features/live-chat/proactive-chat"
+        time: "May 2014 – Sep 2014"
+        tech:
+          - Spring Core
+          - Spring Security
+          - Spring Data
+          - Tomcat
+          - PostgreSQL
+          - Gradle
+          - MongoDB
+          - Heroku
+        team:
+          - Pavel Demeshchik
+          - Igor Loban
+        description: >
+          Live assist and visitor tracking system.
+
+           **Main responsibility**: Development of high-loaded event tracking module.
+
+           _Also_: Implementation of geo ip module. Designing event system on frontend. Code coverage with Tests.
+      - name: "Credit History Database"
+        show: true
+        link: "http://www.mkb.kz/"
+        time: "May 2013 – May 2014"
+        tech:
+          - Spring Batch
+          - Spring Core
+          - Spring Security
+          - Spring LDAP
+          - Play Framework
+          - Hibernate
+          - JBoss EAP
+          - PostgreSQL
+          - Gradle
+          - Bamboo
+        team:
+          - Vadzim Kuzmich
+          - Igor Zboichik
+          - Dmitry Ryabov
+          - Dmitry Tsydzik
+          - Artur Polei
+        description: >
+          A composite distributed system for credit histories collecting, analysis and report generation.
+
+           **Main responsibility**: Design, implementation, and optimization of a high-loaded batch module.
+
+           _Also_: Pentaho templates creation. Performance testing of the application. Creation UI using Groovy templates, jQuery and RequireJS. Optimization of database requests. Code coverage with Tests. Bugfixing.
+links:
+  - title: "CV/Books"
+    url: "books/"
+  - title: "CV/Speaker"
+    url: "speaker/"
+  - title: "CV/Certifications"
+    url: "certifications/"

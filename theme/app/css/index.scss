@@ -113,3 +113,20 @@ $code-family: "Fira Code", monospace;
     font-weight: 700;
   }
 }
+
+.cv {
+  .notification {
+    &.is-company {
+      background-color: #ebebeb;
+      color: rgba(0, 0, 0, .7);
+
+      .is-company-logo {
+        width: calc(128px + 1.5rem);
+      }
+    }
+
+    > .notification:first-of-type {
+      margin-top: 1.5rem;
+    }
+  }
+}

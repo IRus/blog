@@ -1,0 +1,46 @@
+{
+  "$id": "https://ruslan.ibragimov.by/data/certifications-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Definition of Certifications data file.",
+  "type": "array",
+  "items": {
+    "properties": {
+      "year": {
+        "type": "number"
+      },
+      "certifications": {
+        "type": "array",
+        "items": {
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "link": {
+              "type": "string"
+            },
+            "certificate": {
+              "type": "object",
+              "properties": {
+                "file": {
+                  "type": "string"
+                },
+                "img": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "file",
+                "img"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "link"
+          ]
+        }
+      }
+    }
+  }
+}
+

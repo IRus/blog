@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html data-template="pages/single" lang="{{ .Site.LanguageCode }}">
+{{ partial "header.gohtml" . }}
+<body class="blog has-navbar-fixed-top">
+{{ partial "navbar.gohtml" . }}
+<div class="cv">
+    {{ .Content }}
+</div>
+{{ partial "footer.gohtml" . }}
+</body>
+</html>

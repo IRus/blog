@@ -1,116 +1,250 @@
-- year: 2014
-  talks:
-    - title: "Java Professionals BY: Meetup #2"
-      link: "https://www.facebook.com/events/1509539712618583/"
-      date: November 12, 2014
-      description: "The first rakes of Java 8"
-- year: 2015
-  talks:
-    - title: "Java Professionals BY: Meetup #4"
-      link: https://www.facebook.com/events/788805571203192/
-      date: March 25, 2015
-      description: "Introducing WebSockets"
-    - title: "Specific Java Day"
-      link: https://events.dev.by/java-saturday
-      date: October 17, 2015
-      description: >
-        The future of Java development (Kotlin)
-- year: 2016
-  talks:
-    - title: "Java Professionals BY #8"
-      link: https://www.facebook.com/events/1682509135338180/
-      date: February 16, 2016
-      description: Kotlin 1.0
-    - title: "JET Conf #2"
-      link: https://www.youtube.com/watch?v=fZXQjy8sdok&index=3&list=PLeI8rYvNSwbU61n-Cdkz7-kEu-D3UX77Z
-      date: April 25, 2016
-      description: The Darkside of Kotlin
-    - title: "Belarus Kotlin User Group Meetup #1"
-      link: https://bkug.by/2016/03/25/otchet-o-bkug-1/
-      date: March 24, 2016
-      description: "Livecoding: Kotlin In Practice"
-    - title: "Belarus Kotlin User Group Meetup #2"
-      link: https://bkug.by/2016/10/01/otchet-o-bkug-2/
-      date: September 29, 2016
-      description: "Introduction in Asynchronous Computations"
-    - title: "Epam's Kotlin Tech Talk"
-      link: https://events.epam.com/events
-      date: October 3, 2016
-      description: "Kotlin Puzzlers"
-    - title: "Java Professionals BY: Meetup #11"
-      link: http://jprof.by/post/anons-meetup-11/
-      date: November 3, 2016
-      description: "Easy development and deploy with Bootique"
-    - title: "JET Conf #3"
-      link: http://jetconf.by/#/
-      date: November 18, 2016
-      description: Introduction in Bootique
-    - title: "f(by) 2016"
-      link: http://fby.by/
-      date: December 10, 2016
-      description: FullStack Web with Kotlin
-    - title: "JUG Latvia – Kotlin Night"
-      link: https://jug.lv/
-      date: December 15, 2016
-      description: Kotlin for Java Developers
-    - title: "JUG Latvia – Kotlin Night"
-      link: https://jug.lv/
-      date: December 15, 2016
-      description: Introduction in Bootique and Kotlin Gradle
-    - title: "Google Developer Group (GDG) Riga"
-      link: https://www.meetup.com/GDG-Riga/
-      date: December 17, 2016
-      description: "Coding Dojo: Kotlin Saturday"
-- year: 2017
-  talks:
-    - title: "Minsk JS #2"
-      link: https://minskjs.timepad.ru/event/479052/
-      date: May 19, 2017
-      description: Kotlin for Frontend Development
-    - title: "Java Day Minsk 2017"
-      link: https://javaday.by/
-      date: June 3, 2017
-      description: "Kotlin Coroutines: Asynchronous Programming Made Simple"
-      video: https://www.youtube.com/watch?v=2JnzWKyBGOk
-    - title: "Fintech meetup from SberTech and Apps4All"
-      link: http://sbertech.apps4all.ru/
-      date: June 15, 2017
-      description: Why Kotlin?
-    - title: "GDG DevFest 2017 Kaliningrad"
-      link: http://gdg.kantiana.ru/
-      date: October 14, 2017
-      description: Kotlin Coroutines
-      video: https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn
-- year: 2018
-  talks:
-    - title: "Belarus Kotlin User Group Meetup #8"
-      link: https://bkug.by/2018/02/08/anons-bkug-8/
-      date: February 21, 2018
-      description: Ktor.io
-      video: https://www.youtube.com/watch?v=-8U0TvkIdu8
-    - title: "Qiwi Server Party"
-      link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
-      date: March 15, 2018
-      description: Review of Kotlin Ecosystem
-      video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
-    - title: "Leroy Merlin: Kotlin Meetup"
-      link: https://www.youtube.com/watch?v=CIqmtS-bfN8
-      date: March 15, 2018
-      description: Review of Kotlin Ecosystem
-      video: https://www.youtube.com/watch?v=CIqmtS-bfN8
-    - title: "Kotlin Night Kyiv 2018"
-      link: https://2event.com/events/1235410
-      date: March 24, 2018
-      description: Review of Kotlin Ecosystem
-    - title: "Belarus Kotlin User Group Meetup #11"
-      link: https://bkug.by/2018/12/04/anons-bkug-11/
-      date: December 11, 2018
-      description: "R2DBC"
-      video: https://www.youtube.com/watch?v=uQsvxCmayhk
-- year: 2019
-  talks:
-    - title: "Belarus Kotlin User Group Meetup #12"
-      link: https://bkug.by/2019/01/19/anons-bkug-12/
-      date: January 28, 2019
-      description: "Undertow"
-      video: https://www.youtube.com/watch?v=go-NFlXGy7A
+organizer:
+  - title: "Belarus Kotlin User Group Organizer"
+    link: "https://bkug.by/"
+  - title: "Java Professionals By Driver"
+    link: "https://jprof.by/"
+  - title: "Voxxed Days Minsk Programme Committee"
+    link: "https://voxxeddays.com/minsk/"
+    date: "May 26, 2018"
+  - title: "JFuture 2018 Programme Committee"
+    link: "https://jfuture.by/"
+    date: "October 13, 2018"
+  - title: "Java Day Minsk Programme Committee"
+    link: http://javaday.by/
+    date: "June 3, 2017"
+speaker:
+  - year: 2019
+    talks:
+      - title: "Belarus Kotlin User Group Meetup #12"
+        link: https://bkug.by/2019/01/19/anons-bkug-12/
+        date: January 28, 2019
+        description: "Undertow"
+        video: https://www.youtube.com/watch?v=go-NFlXGy7A
+  - year: 2018
+    talks:
+      - title: "Belarus Kotlin User Group Meetup #11"
+        link: https://bkug.by/2018/12/04/anons-bkug-11/
+        date: December 11, 2018
+        description: "R2DBC"
+        video: https://www.youtube.com/watch?v=uQsvxCmayhk
+      - title: "Kotlin Night Kyiv 2018"
+        link: https://2event.com/events/1235410
+        date: March 24, 2018
+        description: Review of Kotlin Ecosystem
+        slides: "speaker/kotlin-night-kiev-2018-kotlin-state.pdf"
+      - title: "Leroy Merlin: Kotlin Meetup"
+        link: https://www.youtube.com/watch?v=CIqmtS-bfN8
+        date: March 15, 2018
+        description: Review of Kotlin Ecosystem
+        video: https://www.youtube.com/watch?v=CIqmtS-bfN8
+        slides: "speaker/leroy-merlin-2018-kotlin-state.pdf"
+      - title: "Qiwi Server Party"
+        link: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+        date: March 15, 2018
+        description: Review of Kotlin Ecosystem
+        video: https://www.youtube.com/watch?v=2ZT5eQpQwH4
+      - title: "Belarus Kotlin User Group Meetup #8"
+        link: https://bkug.by/2018/02/08/anons-bkug-8/
+        date: February 21, 2018
+        description: Ktor.io
+        video: https://www.youtube.com/watch?v=-8U0TvkIdu8
+        slides: "speaker/bkug-8-ktor.pdf"
+  - year: 2017
+    talks:
+      - title: "GDG DevFest 2017 Kaliningrad"
+        link: http://gdg.kantiana.ru/
+        date: October 14, 2017
+        description: Kotlin Coroutines
+        video: https://www.youtube.com/watch?v=XaIrEt25Vb4&list=PLCORO-uRPif33L_os9_fV8yuLhCZlSsXn
+        slides: "speaker/kaliningrad-2017-coroutines.pdf"
+      - title: "Fintech meetup from SberTech and Apps4All"
+        link: http://sbertech.apps4all.ru/
+        date: June 15, 2017
+        description: Why Kotlin?
+        slides: "speaker/sbertech-2017-kotlin.pdf"
+      - title: "Java Day Minsk 2017"
+        link: https://javaday.by/
+        date: June 3, 2017
+        description: "Kotlin Coroutines: Asynchronous Programming Made Simple"
+        video: https://www.youtube.com/watch?v=2JnzWKyBGOk
+      - title: "Minsk JS #2"
+        link: https://minskjs.timepad.ru/event/479052/
+        date: May 19, 2017
+        description: Kotlin for Frontend Development
+        slides: "speaker/minskjs-2-kotlin.pdf"
+  - year: 2016
+    talks:
+      - title: "Google Developer Group (GDG) Riga"
+        link: https://www.meetup.com/GDG-Riga/
+        date: December 17, 2016
+        description: "Coding Dojo: Kotlin Saturday"
+      - title: "JUG Latvia – Kotlin Night"
+        link: https://jug.lv/
+        date: December 15, 2016
+        description: Introduction in Bootique and Kotlin Gradle
+      - title: "JUG Latvia – Kotlin Night"
+        link: https://jug.lv/
+        date: December 15, 2016
+        description: Kotlin for Java Developers
+        slides: "speaker/juglv-kotlin.pdf"
+      - title: "f(by) 2016"
+        link: http://fby.by/
+        date: December 10, 2016
+        description: FullStack Web with Kotlin
+      - title: "JET Conf #3"
+        link: http://jetconf.by/#/
+        date: November 18, 2016
+        description: Introduction in Bootique
+      - title: "Java Professionals BY: Meetup #11"
+        link: http://jprof.by/post/anons-meetup-11/
+        date: November 3, 2016
+        description: "Easy development and deploy with Bootique"
+      - title: "Epam's Kotlin Tech Talk"
+        link: https://events.epam.com/events
+        date: October 3, 2016
+        description: "Kotlin Puzzlers"
+      - title: "Belarus Kotlin User Group Meetup #2"
+        link: https://bkug.by/2016/10/01/otchet-o-bkug-2/
+        date: September 29, 2016
+        description: "Introduction in Asynchronous Computations"
+      - title: "Belarus Kotlin User Group Meetup #1"
+        link: https://bkug.by/2016/03/25/otchet-o-bkug-1/
+        date: March 24, 2016
+        description: "Livecoding: Kotlin In Practice"
+      - title: "JET Conf #2"
+        link: https://www.youtube.com/watch?v=fZXQjy8sdok&index=3&list=PLeI8rYvNSwbU61n-Cdkz7-kEu-D3UX77Z
+        date: April 25, 2016
+        description: The Darkside of Kotlin
+      - title: "Java Professionals BY #8"
+        link: https://www.facebook.com/events/1682509135338180/
+        date: February 16, 2016
+        description: Kotlin 1.0
+  - year: 2015
+    talks:
+      - title: "Specific Java Day"
+        link: https://events.dev.by/java-saturday
+        date: October 17, 2015
+        description: >
+          The future of Java development (Kotlin)
+      - title: "Java Professionals BY: Meetup #4"
+        link: https://www.facebook.com/events/788805571203192/
+        date: March 25, 2015
+        description: "Introducing WebSockets"
+  - year: 2014
+    talks:
+      - title: "Java Professionals BY: Meetup #2"
+        link: "https://www.facebook.com/events/1509539712618583/"
+        date: November 12, 2014
+        description: "The first rakes of Java 8"
+attender:
+  - title: "KotlinConf 2018"
+    link: "http://kotlinconf.com/"
+    date: "October 3, 2018"
+  - title: "Radio-T 507"
+    link: "https://radio-t.com/p/2016/08/06/podcast-507/"
+    date: "August 6, 2016"
+  - title: "Radio-T 536"
+    link: "https://radio-t.com/p/2017/03/04/podcast-536/"
+    date: "March 4, 2017"
+  - title: "JPoint 2017"
+    link: "https://jpoint.ru/"
+    date: "April 7, 2017"
+  - title: "AWSome Day Минск"
+    link: "https://pages.awscloud.com/awsomedayminsk_01.landingpage.html"
+    date: "April 5, 2017"
+  - title: "JET Conf #3"
+    link: "http://jetconf.by/"
+    date: "November 18, 2016"
+  - title: "Web Standards Days 2016"
+    link: "http://webstandardsdays.ru/"
+    date: "October 29, 2016"
+  - title: "DevOpsBy 2016"
+    link: "http://devopsconf.by/"
+    date: "October 16, 2016"
+  - title: "Joker 2016"
+    link: "https://jokerconf.com/"
+    date: "October 14, 2016"
+  - title: "EPAM SEC FALL 2016"
+    link: "https://events.epam.com/events/sec-2016"
+    date: "October 1, 2016"
+  - title: "Я.Субботник в Минске 2016"
+    link: "http://tech.yandex.ru/events/yasubbotnik/"
+    date: "September 3, 2016"
+  - title: "Java Day Minsk 2016"
+    link: "http://javaday.by/"
+    date: "June 11, 2016"
+  - title: "JET Conf #2"
+    link: "http://jetconf.by/"
+    date: "April 25, 2016"
+  - title: "Space Talks #14: Сторителлинг с Алексеем Бурносенко"
+    link: "https://www.facebook.com/events/974404455940253/"
+    date: "March 30, 2016"
+  - title: "Web Standards Days 2015"
+    link: "http://webstandardsdays.ru/"
+    date: "October 31, 2015"
+  - title: "Я.Субботник в Минске 2015"
+    link: "http://tech.yandex.ru/events/yasubbotnik/"
+    date: "October 10, 2015"
+  - title: "JET Conf #1"
+    link: "http://jetconf.by/#/"
+    date: "September 28, 2015"
+  - title: "Big Data Nerds Meet-up #3"
+    link: "https://www.facebook.com/groups/big.data.nerds.minsk/"
+    date: "December 22, 2014"
+  - title: "Web Not Bombs #5"
+    link: "http://webnotbombs.net/"
+    date: "December 4, 2014"
+  - title: "Ciklum Java Saturday"
+    link: "http://events.dev.by/ciklum-java-saturday-november-22-mini-conference"
+    date: "November 22, 2014"
+  - title: "Ciklum Frontend developers’ Speakers' Corner"
+    link: "http://events.dev.by/ciklum-frontend-developers-speakers-corner-prakticheskaya-storona-razrabotki-odnostranichnyh-prilozheniy"
+    date: "November 20, 2014"
+  - title: "WTH – True hackathon for true geeks"
+    link: "http://wth.by/"
+    date: "October 19, 2014"
+  - title: "Java Professionals BY: Meetup #1"
+    link: "https://www.facebook.com/events/1509539712618583/"
+    date: "October 8, 2014"
+  - title: "Я.Субботник в Минске 2014"
+    link: "http://tech.yandex.ru/events/yasubbotnik/"
+    date: "August 30, 2014"
+  - title: "Google Developers Group Christmas Tech Talks"
+    link: "https://plus.google.com/events/cbeltaqc7pgm1juh2r888fiheuk"
+    date: "December 16, 2013"
+  - title: "DevFest 2013 Minsk"
+    link: "https://plus.google.com/events/c9gntpg9mkkv6v8ug52uuqp5664"
+    date: "October 29, 2013"
+  - title: "Python Meetup"
+    link: "https://www.facebook.com/MinskPythonMeetup"
+    date: "September 27, 2013"
+  - title: "Web Not Bombs #2"
+    link: "http://webnotbombs.net/"
+    date: "September 19, 2013"
+  - title: "Я.Субботник в Минске 2013"
+    link: "http://tech.yandex.ru/events/yasubbotnik/"
+    date: "August 31, 2013"
+  - title: "Линуксовки"
+    link: "http://mlug.linux.by/"
+    date: "Minsk Linux User Group"
+  - title: "Встреча сообщества фронтенд и JavaScript разработчиков – The Rolling Scopes"
+    link: "http://meetup.by/event/2013-06-17/rolling-scopes-2"
+    date: "June 27, 2013"
+  - title: "Встреча Ruby и Ruby on Rails разработчиков(Belarus Ruby on Rails Usergroup)"
+    link: "http://www.belarusrubyonrails.org/"
+    date: "May 25, 2013"
+  - title: "SEF.BY2Students 2012"
+    link: "http://sef.by/"
+    date: "December 1, 2012"
+  - title: "World Usability Day 2012"
+    link: "http://wud.epam.by/"
+    date: "November 5, 2012"
+  - title: "Web Standards Days 2012"
+    link: "http://webstandardsdays.ru/"
+    date: "October 27, 2012"
+  - title: "Я.Субботник в Минске 2012"
+    link: "http://tech.yandex.ru/events/yasubbotnik/"
+    date: "June 2, 2012"
+  - title: "Web Standards Days 2011"
+    link: "http://webstandardsdays.ru/"
+    date: "October 29, 2011"

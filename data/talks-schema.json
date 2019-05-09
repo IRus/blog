@@ -2,41 +2,87 @@
   "$id": "https://ruslan.ibragimov.by/data/talks-schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "description": "Definition of Books data file.",
-  "type": "array",
-  "items": {
-    "properties": {
-      "year": {
-        "type": "number"
-      },
-      "talks": {
-        "type": "array",
-        "items": {
-          "properties": {
-            "title": {
-              "type": "string"
-            },
-            "link": {
-              "type": "string"
-            },
-            "date": {
-              "type": "string"
-            },
-            "description": {
-              "type": "string"
-            },
-            "slides": {
-              "type": "string"
-            },
-            "video": {
-              "type": "string"
-            }
+  "type": "object",
+  "properties": {
+    "speaker": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "year": {
+            "type": "number"
           },
-          "required": [
-            "title",
-            "link",
-            "date"
-          ]
+          "talks": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "slides": {
+                  "type": "string"
+                },
+                "video": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "title",
+                "link",
+                "date"
+              ]
+            }
+          }
         }
+      }
+    },
+    "organizer": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "link"
+        ]
+      }
+    },
+    "attender": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "link",
+          "date"
+        ]
       }
     }
   }

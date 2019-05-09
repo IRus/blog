@@ -1,0 +1,79 @@
+- year: 2019
+  certifications:
+    - title: "Kotlin Koans"
+      link: "https://stepik.org/course/4222/syllabus"
+    - title: "Kotlin for Java Developers"
+      link: "https://www.coursera.org/learn/kotlin-for-java-developers"
+      certificate:
+        file: "certificates/coursera-kotlin.pdf"
+        img: "certificates/coursera-kotlin.png"
+- year: 2016
+  certifications:
+    - title: "Egghead.io - Building React Applications with Idiomatic Redux"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Cycle.js Fundamentals"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Getting Started with Redux"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Wrangle your terminal with tmux"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Use Types Effectively in TypeScript"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Start Building Accessible Web Applications Today"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - RxJS Subjects and Multicasting Operators"
+      link: "https://egghead.io/"
+    - title: "Egghead.io - Manage Complex State in React Apps with MobX"
+      link: "https://egghead.io/"
+- year: 2015
+  certifications:
+    - title: "Public Speaking. Workshop"
+      link: "https://events.dev.by/space-talks-public-speaking-basics-trening-alekseya-burnosenko"
+      certificate:
+        file: "certificates/public-speaking.jpg"
+        img: "certificates/public-speaking.jpg"
+    - title: "Hexlet: Java Development"
+      link: "https://en.hexlet.io/"
+    - title: "Hexlet: Javascript"
+      link: "https://en.hexlet.io/"
+    - title: "Javascript.ru - Webpack Screencast"
+      link: "https://learn.javascript.ru/screencast/webpack"
+- year: 2014
+  certifications:
+    - title: "Codeschool - Discover DevTools"
+      link: "https://www.codeschool.com/courses/discover-devtools"
+    - title: "Codeschool - ES2015: The Shape of JavaScript to Come"
+      link: "https://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come"
+    - title: "Codeschool - Git Real"
+      link: "https://www.codeschool.com/courses/git-real"
+    - title: "Codeschool - Git Real 2"
+      link: "https://www.codeschool.com/courses/git-real-2"
+    - title: "Codeschool - JavaScript Road Trip Part 1"
+      link: "https://www.codeschool.com/courses/javascript-road-trip-part-1"
+    - title: "Codeschool - JavaScript Road Trip Part 2"
+      link: "https://www.codeschool.com/courses/javascript-road-trip-part-2"
+    - title: "Codeschool - JavaScript Road Trip Part 3"
+      link: "https://www.codeschool.com/courses/javascript-road-trip-part-3"
+    - title: "Codeschool - Mastering GitHub"
+      link: "https://www.codeschool.com/courses/mastering-github"
+    - title: "Codeschool - Try Git"
+      link: "https://www.codeschool.com/courses/try-git"
+    - title: "Codeschool - Try Ruby"
+      link: "https://www.codeschool.com/courses/try-ruby"
+    - title: "Codeschool - Try Sql"
+      link: "https://www.codeschool.com/courses/try-sql"
+- year: 2013
+  certifications:
+    - title: "Coursera - Machine Learning"
+      link: "https://www.coursera.org/learn/machine-learning"
+    - title: "БГУИР-IBA: Software architecture and design patterns"
+      link: "https://www.bsuir.by/"
+    - title: "Forteknowledge: Android Development"
+      link: "http://forteknowledge.com/courses/"
+- year: 2012
+  certifications:
+    - title: "10gen - MongoDB for Developers"
+      link: "https://s3.amazonaws.com/edu-cert.10gen.com/downloads/0235a75717f04884949bd1516d7b2791/Certificate.pdf"
+      certificate:
+        file: "certificates/10gen-mongodb.pdf"
+        img: "certificates/10gen-mongodb.png"

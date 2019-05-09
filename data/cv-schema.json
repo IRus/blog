@@ -1,0 +1,183 @@
+{
+  "$id": "https://ruslan.ibragimov.by/data/cv-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "description": "Definition of CV data file.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "level"
+        ]
+      }
+    },
+    "education": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "time": {
+            "type": "string"
+          },
+          "where": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "show": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "time",
+          "where",
+          "description",
+          "show"
+        ]
+      }
+    },
+    "experience": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "time": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "company": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "link",
+              "logo"
+            ]
+          },
+          "projects": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "show": {
+                  "type": "boolean"
+                },
+                "time": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "tech": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "team": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "description",
+                "name",
+                "time",
+                "show",
+                "tech",
+                "team"
+              ]
+            }
+          }
+        },
+        "required": [
+          "title",
+          "company",
+          "time",
+          "description"
+        ]
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "name",
+    "title",
+    "description",
+    "profiles",
+    "languages",
+    "education",
+    "links"
+  ]
+}
+

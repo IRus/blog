@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="111.27mm" height="111.27mm" version="1.1" viewBox="0 0 111.27 111.27" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" data-lt-installed="true">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-1.4399 -1.3506)">
+  <g transform="translate(.0073666 .071764)">
+   <path transform="matrix(.26458 0 0 .26458 1.5875 1.0917)" d="m209.71 2.6797a208.57 208.57 0 0 0-75.529 14.158v157.35c11.458-17.535 24.914-30.644 40.365-39.324 15.625-8.6806 33.594-13.02 53.906-13.02 33.507 0 58.854 10.417 76.041 31.25 17.188 20.66 25.781 51.128 25.781 91.406v136.63a208.57 208.57 0 0 0 88.006-169.88 208.57 208.57 0 0 0-208.57-208.57zm-123.71 40.941a208.57 208.57 0 0 0-84.865 167.63 208.57 208.57 0 0 0 84.865 167.63zm131.77 119.88c-25.868 0-46.267 8.2472-61.197 24.74-14.931 16.493-22.396 38.975-22.396 67.447v149.74a208.57 208.57 0 0 0 75.529 14.387 208.57 208.57 0 0 0 72.648-13.203v-160.56c0-27.604-5.3826-48.265-16.146-61.98s-26.91-20.572-48.438-20.572z" stroke-width="0" style="paint-order:normal"/>
+  </g>
+ </g>
+</svg>
