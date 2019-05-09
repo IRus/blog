@@ -1,7 +1,7 @@
 name: "Ruslan Ibragimov"
 title: "Senior Software Engineer"
 description: >
-  I have great experience in computer science. Every day i try to find new knowledge, technologies and study them. At work my goal - do perfect products, transfer my knowledge in team. I often speak at local meetups and attend to conferences. I understand software development process, and already use few software development methodologies& waterfall, scrum and kanban. I'm doing my best to write clean, maintainable code.
+  I have great experience in computer science. Every day I try to find new knowledge, technologies and study them. At work my goal - do perfect products, transfer my knowledge in team. I often speak at local meetups and attend to conferences. I understand software development process, and already use few software development methodologies: waterfall, scrum and kanban. I'm doing my best to write clean, maintainable code.
 
 
   I will be happy to work with people like me: people that love technologies, software, hardware and cycling :D
@@ -143,6 +143,17 @@ experience:
       link: "https://bkug.by/"
       logo: "logos/bkug.jpg"
     title: "Community Organizer"
+    projects:
+      - name: "School.kt"
+        time: "Feb 2019 - Mar 2019"
+        show: true
+        team:
+          - "Kirill Rozov"
+          - "Siarhei Krukau"
+        tech:
+          - "Kotlin"
+        description: >
+          We launched Kotlin courses for Java developers. And we trained a group of 45 people.
   - time: "Oct 2014 - Present"
     description: >
       Speak at events and help organize them, build community.
