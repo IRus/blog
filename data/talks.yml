@@ -15,6 +15,16 @@ organizer:
 speaker:
   - year: 2019
     talks:
+      - title: "Integrate Kotlin Coroutines and JUnit 5"
+        link: "https://knightkyiv.com/"
+        date: "June 1, 2019"
+        description: "Writing TestEngine for running suspend tests"
+        slides: "speaker/kotlin-night-kiev-2019-junit.pdf"
+      - title: "Ktor"
+        link: "https://knightkyiv.com/"
+        date: "June 1, 2019"
+        description: "Introduction to Ktor"
+        slides: "speaker/kotlin-night-kiev-2019-ktor.pdf"
       - title: "Belarus Kotlin User Group Meetup #12"
         link: https://bkug.by/2019/01/19/anons-bkug-12/
         date: January 28, 2019
