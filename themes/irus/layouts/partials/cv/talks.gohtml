@@ -16,17 +16,19 @@
         <h4>{{ .year }}</h4>
         <ul>
             {{ range .talks }}
-                <li>
-                    <a href="{{ .link }}" title="{{ .date }}">{{ .title }}</a> - {{ .description }}
-                    <div class="tags">
-                        {{ if .slides }}
-                            <span class="tag is-dark"><a href="{{ .slides }}">Slides</a></span>
-                        {{ end }}
-                        {{ if .video }}
-                            <span class="tag is-white"><a href="{{ .video }}">Video</a></span>
-                        {{ end }}
-                    </div>
-                </li>
+                {{ if not .hide }}
+                    <li>
+                        <a href="{{ .link }}" title="{{ .date }}">{{ .title }}</a> - {{ .description }}
+                        <div class="tags">
+                            {{ if .slides }}
+                                <span class="tag is-dark"><a href="{{ .slides }}">Slides</a></span>
+                            {{ end }}
+                            {{ if .video }}
+                                <span class="tag is-white"><a href="{{ .video }}">Video</a></span>
+                            {{ end }}
+                        </div>
+                    </li>
+                {{ end }}
             {{ end }}
         </ul>
     {{ end }}

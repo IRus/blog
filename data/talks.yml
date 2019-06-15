@@ -140,12 +140,24 @@ speaker:
         link: https://www.facebook.com/events/788805571203192/
         date: March 25, 2015
         description: "Introducing WebSockets"
+      - title: "WTH #2: Heap"
+        link: "https://wth.by/"
+        video: https://www.youtube.com/watch?v=vTDz-qHfnYs
+        date: April 27, 2015
+        description: "Наш проект с WTH #2"
+        hide: true
   - year: 2014
     talks:
       - title: "Java Professionals BY: Meetup #2"
         link: "https://www.facebook.com/events/1509539712618583/"
         date: November 12, 2014
         description: "The first rakes of Java 8"
+      - title: "WTH #1: CashKeeper"
+        link: "https://wth.by/"
+        video: "https://www.youtube.com/watch?v=x73WNL3wlhQ"
+        date: October 24, 2014
+        description: "Наш проект с WTH #1"
+        hide: true
 attender:
   - title: "KotlinConf 2018"
     link: "http://kotlinconf.com/"
