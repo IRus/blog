@@ -353,3 +353,10 @@ conferences:
         link: https://www.youtube.com/watch?v=IFXnPmA5lJg
         description: >
           не смог смотреть, очень нудно и натянуто
+  - name: "Dev Rel"
+    playlist: "https://www.youtube.com/watch?v=vxk1WRgbA64&list=PLwOuygPowJYYJGXSvZX8UQfTM68fAN8Kq"
+    talks:
+      - title: "The Art of Talk Design by Melinda Seckington"
+        description: "Отлично описано все что нужно, чтобы сделать хороший доклад"
+        link: https://www.youtube.com/watch?v=pPWKhIDTPY4
+        favorite: true
