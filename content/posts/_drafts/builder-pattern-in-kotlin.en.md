@@ -8,6 +8,8 @@ categories:
   - Highlights
 ---
 
+// Immutable interface, для mutable класса
+
 https://habr.com/ru/company/jugru/blog/438866/
 
 So question is: "How Builder Pattern will look in Kotlin?". 
