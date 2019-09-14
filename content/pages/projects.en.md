@@ -23,7 +23,3 @@ date: 2018-11-11
 * [bootique-undertow](https://github.com/bootique/bootique-undertow) - undertow integration;
 * [bootique-flyway](https://github.com/bootique/bootique-flyway) - flyway integration;
 * [bootique-logback-sentry](https://github.com/bootique/bootique-logback/tree/master/bootique-logback-sentry) - sentry integration.
-
-
-
-
