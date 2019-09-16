@@ -36,6 +36,11 @@ conferences:
         favorite: true
         description: >
           Описывает процесс и трудности создания дистрибутива OpenJDK. Оказывается что BellSoft делает дистрибутив для Intellij Idea. Обязательно к просмотру!
+      - title: "Cliff Click — A JVM Does That?"
+        link: https://www.youtube.com/watch?v=RtHA1YVLW5Y
+        favorite: true
+        description: >
+          Один из лучших докладов про JVM. Рекомендую как разработчикам под JVM так и всем другим.
   - name: Joker 2018
     playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b_DvLWtURPD0Dz2NZil55XI
     talks:
