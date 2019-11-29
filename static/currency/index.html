@@ -1,48 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Currency</title>
-  <link rel="stylesheet" href="./bulma.css">
+  <title>301</title>
+  <meta http-equiv="refresh" content="0; URL=https://ibragimov.by/currency/"/>
 </head>
 <body>
-
-<section class="hero is-bold is-light is-fullheight">
-  <div class="hero-body">
-    <div class="container">
-      <div class="control">
-        <input class="input is-large" id="amount" type="number" placeholder="UAH"/>
-      </div>
-      <h2 id="converted" class="subtitle"></h2>
-    </div>
-  </div>
-</section>
-
+  Moved to <a href="https://ibragimov.by/currency/">ibragimov.by/currency</a>
 </body>
-<script>
-  amount.addEventListener("keyup", function (event) {
-      const uah = event.target.value;
-      converted.textContent = (uah / 11.96).toFixed(2);
-  });
-</script>
-<script>
-    // Check compatibility for the browser we're running this in
-    if ("serviceWorker" in navigator) {
-        if (navigator.serviceWorker.controller) {
-            console.log("[PWA] active service worker found, no need to register");
-        } else {
-            // Register the service worker
-            navigator.serviceWorker
-                .register("/currency/sw.js", {
-                    scope: "./"
-                })
-                .then(function (reg) {
-                    console.log("[PWA] Service worker has been registered for scope: " + reg.scope);
-                });
-        }
-    }
-</script>
 </html>
