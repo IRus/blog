@@ -3,6 +3,10 @@
 # * [Евгений Борисов — Spring Puzzlers: второй сезон](https://www.youtube.com/watch?v=BFEgLtFLdRI)
 
 conferences:
+  - name: "Joker 2019"
+    playlist: https://www.youtube.com/playlist?list=PLVe-2wcL84b_ZJJywYZru7IQVvIPcfj6a
+  - name: "JFuture 2019"
+    playlist: https://www.youtube.com/playlist?list=PLpVeA1tdgfCDArx2X2VpyR7Hke_GHXuqb
   - name: "Lock-Free Algorithms for Kotlin Coroutines"
     talks:
       - title: Roman Elizarov — Lock-Free Algorithms for Kotlin Coroutines (Part 1)
