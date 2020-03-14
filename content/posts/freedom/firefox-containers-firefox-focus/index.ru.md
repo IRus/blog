@@ -3,6 +3,7 @@ title: "Firefox Containers & Firefox Focus"
 date: 2017-06-20
 categories:
   - Freedom
+  - Firefox
   - Highlights
 ---
 
