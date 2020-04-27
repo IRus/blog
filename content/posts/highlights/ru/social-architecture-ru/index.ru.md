@@ -14,3 +14,6 @@ categories:
 - [epub](social-architecture-ru.epub)
 - [mobi](social-architecture-ru.mobi)
 - [pdf](social-architecture-ru.pdf)
+
+**Upd.** gitbook перестал бесплатно собирать
+epub/pdf версии книги, поэтому книжка переехала на asciidoc и доступна в [репозитории](https://irus.github.io/social-architecture-ru/) на GitHub.
