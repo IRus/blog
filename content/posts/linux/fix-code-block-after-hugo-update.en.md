@@ -5,7 +5,7 @@ categories:
   - Hugo
 ---
 
-I update this blog from Hugo 0.55 to 0.68 and this broke how code block is rendering. Ugly black appears:
+I update this blog from Hugo 0.55 to 0.68 and this broke how code blocks is rendering. Ugly black appears:
 
 ```html
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">...</code></pre>
