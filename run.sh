@@ -1,3 +1,5 @@
 #!/bin/bash
 
-hugo serve --disableFastRender --buildFuture;
+set -euxo pipefail
+
+hugo server --disableFastRender --buildFuture --buildDrafts
