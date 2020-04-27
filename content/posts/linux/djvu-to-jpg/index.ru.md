@@ -10,6 +10,8 @@ categories:
 ```bash
 #!/bin/bash
 
+set -euxo pipefail
+
 #
 # Install
 # sudo apt install djvulibre-bin
