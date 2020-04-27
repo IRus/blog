@@ -24,3 +24,7 @@ permalinks:
   posts: /:year/:month/:day/:filename/
 
 preserveTaxonomyNames: true
+
+markup:
+  highlight:
+    noClasses: false
