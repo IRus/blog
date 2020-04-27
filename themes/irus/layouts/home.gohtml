@@ -25,8 +25,8 @@
     <aside class="content is-medium">
       <hr/>
       Blog stats:
-      {{ string (len (where .Data.Pages "Section" "posts")) }} <a href="{{ "posts/" | absLangURL }}">posts</a>,
-      {{ string (len (where .Data.Pages "Section" "pages")) }} <a href="{{ "pages/" | absLangURL }}">pages</a>.
+      {{ string (len (where .Site.RegularPages "Section" "==" "posts")) }} <a href="{{ "posts/" | absLangURL }}">posts</a>,
+      {{ string (len (where .Site.RegularPages "Section" "==" "pages")) }} <a href="{{ "pages/" | absLangURL }}">pages</a>.
     </aside>
   </main>
 </section>
