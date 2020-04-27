@@ -1,9 +1,14 @@
 language: minimal
 
+git:
+  lfs_skip_smudge: true
+  depth: 1
+
 addons:
   ssh_known_hosts: ibragimov.by
 
 before_install:
+  - git lfs pull
   - export HUGO_VERSION=0.69.2
   - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb"
   - sudo dpkg -i "hugo_${HUGO_VERSION}_Linux-64bit.deb"
@@ -24,3 +29,5 @@ deploy:
 
 cache:
   yarn: true
+  directories:
+    - .git/lfs
