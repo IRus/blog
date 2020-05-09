@@ -1,4 +1,4 @@
-import * as hljs from "highlight.js/lib/highlight.js";
+import * as hljs from "highlight.js/lib/core.js";
 import * as xml from "highlight.js/lib/languages/xml.js";
 import * as bash from "highlight.js/lib/languages/bash.js";
 import * as markdown from "highlight.js/lib/languages/markdown.js";

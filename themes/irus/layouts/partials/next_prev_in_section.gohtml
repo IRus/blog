@@ -1,12 +1,8 @@
-<div class="field is-grouped">
+<div>
   {{ if .NextInSection }}
-  <p class="control">
-    <a href="{{ .NextInSection.Permalink }}" class="button is-link is-outlined">← {{ .NextInSection.Title }}</a>
-  </p>
+    <a href="{{ .NextInSection.Permalink }}" class="is-pulled-left">← {{ .NextInSection.Title }}</a>
   {{ end }}
   {{ if .PrevInSection }}
-  <p class="control">
-    <a href="{{ .PrevInSection.Permalink }}" class="button is-link is-outlined">{{ .PrevInSection.Title }} →</a>
-  </p>
+    <a href="{{ .PrevInSection.Permalink }}" class="is-pulled-right">{{ .PrevInSection.Title }} →</a>
   {{ end }}
 </div>

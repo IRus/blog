@@ -1,7 +1,7 @@
 export function menu() {
     const baseUrl = `${document.location.protocol}//${document.location.host}`;
     const path = document.location.pathname;
-    const links = document.querySelectorAll("a.navbar-item, a.navbar-link");
+    const links = document.querySelectorAll(".navbar-menu a.navbar-item");
     links.forEach((element: HTMLLinkElement) => {
         const linkPath = element.href.replace(baseUrl, "");
 
