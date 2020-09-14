@@ -9,7 +9,7 @@ addons:
 
 before_install:
   - git lfs pull
-  - export HUGO_VERSION=0.74.1
+  - export HUGO_VERSION=0.75.0
   - wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.deb"
   - sudo dpkg -i "hugo_${HUGO_VERSION}_Linux-64bit.deb"
 
