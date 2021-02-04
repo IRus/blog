@@ -34,7 +34,7 @@ categories:
 }
 ```
 
-<video controls src="./create-public-bucket.mp4"></video>
+{{< video src="./create-public-bucket.mp4" >}}
 
 ## Create AWS Credentials
 
@@ -42,7 +42,7 @@ categories:
 2. Create IAM Group
 3. Create IAM User
 
-<video controls src="./create-aws-credentials.mp4"></video>
+{{< video src="./create-aws-credentials.mp4" >}}
 
 **AWS Credentials**
 ```

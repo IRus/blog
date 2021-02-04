@@ -9,7 +9,7 @@ categories:
 
 Google Slides неплохой вариант для создания строгих презентаций. В целом это законченный, полноценный продукт, но все-таки у него есть несколько проблем. Одна из проблем о которой сейчас пойдет речь - невозможность показывать общее количество слайдов.
 
-Решать мы будем с помощью [Google Apps Script](https://script.google.com/home). 
+Решать мы будем с помощью [Google Apps Script](https://script.google.com/home).
 
 И так, сначала по шагам, а потом рассмотрим подробнее интересные моменты:
 
@@ -20,30 +20,30 @@ Google Slides неплохой вариант для создания строг
     function onInstall(e) {
       onOpen();
     }
-    
+
     function onOpen(e) {
       const ui = SlidesApp.getUi().createAddonMenu()
         .addItem("Update page count", "pageCount")
         .addToUi();
     }
-    
+
     function pageCount() {
       const slides = SlidesApp
         .getActivePresentation();
-      
+
       const totalPages = slides.getSlides().length;
-      
+
       slides.getSlides().forEach(function (slide, idx) {
         slide.getShapes()
           .filter(function (element) {
             return element.getText && element.getText().find("Slide [0-9]+\/[0-9]+").length > 0
           })
-          .forEach(function (element) {      
+          .forEach(function (element) {
             return element.getText().setText(Utilities.formatString("Slide %s/%s", idx + 1, totalPages));
           });
       });
     }
-    ```    
+    ```
 4. Теперь на слайдах вставляем в нужном месте текстовый блок с содержимым: "Slide 0/0";
 5. И вызываем скрипт из **Add-ons** -> **Page Count** -> **Update page count**.
 
@@ -54,4 +54,4 @@ Google Slides неплохой вариант для создания строг
 
 Возможно я разберусь с публикацией этого скрипта в стор и сделаю его более общим. Но пока - пока.
 
-<video controls src="./google-slides-count.webm"></video>
+{{< video src="./google-slides-count.webm" >}}
