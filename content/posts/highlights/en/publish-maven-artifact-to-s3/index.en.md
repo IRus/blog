@@ -116,6 +116,10 @@ dependencies {
 }
 ```
 
+## Caveats
+
+1. Don't use `+` symbol in artifact version! Because `+` [interpreted as space in s3](https://forums.aws.amazon.com/thread.jspa?threadID=55746).
+
 ## Add repo to repo.kotlin.link (Optional)
 
 In [Heapy/repo.kotlin.link](https://github.com/Heapy/repo.kotlin.link) edit [index.yml](https://github.com/Heapy/repo.kotlin.link/blob/main/src/main/resources/index.yml):
