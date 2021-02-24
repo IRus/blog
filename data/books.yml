@@ -1,3 +1,7 @@
+- year: 2021
+  books:
+    - name: "MIG Pilot - The final escape of Lt. Belenko"
+      author: "John Barron"
 - year: 2019
   books:
     - name: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
