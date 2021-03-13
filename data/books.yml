@@ -2,6 +2,10 @@
   books:
     - name: "MIG Pilot - The final escape of Lt. Belenko"
       author: "John Barron"
+- year: 2020
+  books:
+    - name: "Устал рождаться и умирать"
+      author: "Мо Янь"
 - year: 2019
   books:
     - name: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
