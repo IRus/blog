@@ -2,7 +2,6 @@ title: "Zero Entropy"
 baseURL: "https://ruslan.ibragimov.by/"
 languageCode: "en-us"
 theme: irus
-disqusShortname: "ibragimov-ruslan"
 rssLimit: 10
 
 DefaultContentLanguage: en
