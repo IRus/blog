@@ -15,10 +15,6 @@ languages:
     params:
       emoji: ":ru:"
 
-params:
-  description: "Kotlin, Programming, Thoughts, Travels."
-  author: "Ruslan Ibragimov"
-
 permalinks:
   posts: /:year/:month/:day/:filename/
 

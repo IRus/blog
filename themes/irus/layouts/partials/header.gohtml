@@ -3,10 +3,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>{{ .Title }} | Zero Entropy</title>
-  <meta name="description" content="{{ .Site.Params.description }}">
-  <meta name="author" content="{{ .Site.Params.author }}">
   {{ partial "favicon.gohtml" . }}
-  {{ partial "assets.gohtml" . }}
+  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}style.css?ver={{ now.Unix }}"/>
   <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
   <link href="{{ .Site.BaseURL }}ru/index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} [RU]">
 </head>
