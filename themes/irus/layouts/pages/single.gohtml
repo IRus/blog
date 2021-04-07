@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html data-template="pages/single" lang="{{ .Site.LanguageCode }}">
 {{ partial "header.gohtml" . }}
-<body class="blog has-navbar-fixed-top">
+<body>
 {{ partial "navbar.gohtml" . }}
-<section class="blog-content section">
-  <section class="section">
-    <article class="container">
-      <div class="content is-medium">
-        <h1 class="title is-1">{{ .Title }}</h1>
-        {{ .Content }}
-      </div>
-    </article>
-  </section>
-</section>
+<article>
+  <h2>{{ .Title }}</h2>
+  {{ .Content }}
+</article>
 {{ partial "footer.gohtml" . }}
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html data-template="_default/single" lang="{{ .Site.LanguageCode }}">
 {{ partial "header.gohtml" . }}
-<body class="blog has-navbar-fixed-top">
+<body>
 {{ partial "navbar.gohtml" . }}
 <section class="blog-content section">
   <article class="container">
@@ -22,7 +22,6 @@
     <hr/>
     {{ partial "next_prev_in_section.gohtml" . }}
   </article>
-  {{ partial "comments.gohtml" . }}
 </section>
 {{ partial "footer.gohtml" . }}
 </body>
