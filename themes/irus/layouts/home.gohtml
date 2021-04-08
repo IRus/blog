@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html data-template="home" lang="{{ .Site.LanguageCode }}">
 {{ partial "header.gohtml" . }}
-<body>
-{{ partial "navbar.gohtml" . }}
-<section class="blog-content section">
+<section>
   <main class="container">
     <h1 class="title is-1">{{ .Site.Title }}</h1>
     <div class="content is-large">
@@ -31,5 +27,3 @@
   </main>
 </section>
 {{ partial "footer.gohtml" . }}
-</body>
-</html>

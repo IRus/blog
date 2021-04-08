@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html data-template="_default/list" lang="{{ .Site.LanguageCode }}">
 {{ partial "header.gohtml" . }}
-<body>
-{{ partial "navbar.gohtml" . }}
-<section class="blog-content section">
-  <article class="container">
-    <div class="content is-large">
-      <h1 class="title is-1">{{ .Title }}</h1>
-      {{ .Content }}
-      <div class="year-group">
-        {{ range .Data.Pages.ByPublishDate.GroupByDate "2006" "desc" }}
-          <div class="year">{{ .Key }}</div>
-          {{ range .Pages.ByPublishDate.Reverse }}
-          <div class="item">
-            <p><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-          </div>
-          {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </article>
-</section>
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Data.Pages.ByPublishDate.GroupByDate "2006" "desc" }}
+    <p>{{ .Key }}</p>
+    <ul>
+      {{ range .Pages.ByPublishDate.Reverse }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</article>
 {{ partial "footer.gohtml" . }}
-</body>
-</html>

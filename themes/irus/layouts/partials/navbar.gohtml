@@ -1,53 +1,17 @@
-<nav class="navbar is-light is-fixed-top" role="navigation" aria-label="main navigation">
-  <div class="container">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="{{ "" | absLangURL }}">
-        <img src="{{ .Site.BaseURL }}logo.png" width="28" height="28" alt="Logo"/>
+<nav role="navigation" aria-label="main navigation">
+  <span>Navigation:</span>
+  <a href="{{ "" | absLangURL }}">Home</a>
+  <a href="{{ "pages/cv/" | absLangURL }}">About me</a>
+  <a href="{{ "pages/projects/" | absLangURL }}">Projects</a>
+  <a href="{{ "categories/" | absLangURL }}">Categories</a>
+  <a href="{{ "pages/rss/" | absLangURL }}">RSS</a>
+  {{ $CurrentLang := .Lang }}
+  {{ range .Site.Languages }}
+    {{ if ne $CurrentLang .Lang }}
+      <a href="{{ .Lang | absURL }}" rel="alternate" lang="{{ .Lang }}">
+        {{ .Params.text}}
       </a>
-
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-         data-target="main-menu">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-
-    <div id="main-menu" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="{{ "" | absLangURL }}" class="navbar-item">
-          Home
-        </a>
-
-        <a href="{{ "pages/cv/" | absLangURL }}" class="navbar-item">
-          Curriculum vitae
-        </a>
-
-        <a href="{{ "pages/projects/" | absLangURL }}" class="navbar-item">
-          Projects
-        </a>
-
-        <a href="{{ "categories/" | absLangURL }}" class="navbar-item">
-          Categories
-        </a>
-      </div>
-
-      <div class="navbar-end">
-        {{ $CurrentLang := .Lang }}
-        {{ range .Site.Languages }}
-          <a href="{{ .Lang | absURL }}"
-             class="{{ if eq $CurrentLang .Lang }}is-active{{end}} navbar-item"
-             rel="alternate" lang="{{ .Lang }}">
-              {{ emojify .Params.emoji }}
-            </a>
-        {{ end }}
-        <a href="{{ "pages/rss/" | absLangURL }}" class="navbar-item">
-          <span class="icon navbar-icon">
-            <img src="{{ .Site.BaseURL }}icons/rss.svg" alt=""/>
-          </span>
-          RSS
-        </a>
-      </div>
-    </div>
-  </div>
+    {{end}}
+  {{ end }}
 </nav>
+<hr/>

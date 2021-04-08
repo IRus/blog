@@ -1,3 +1,18 @@
 footer {
     margin-bottom: 50px;
 }
+
+body {
+    max-width: 100%;
+}
+
+pre {
+    border: 1px dotted #1c1c1c;
+    padding: 20px;
+    width: max-content;
+    overflow: scroll;
+}
+
+article video {
+    max-width: 600px;
+}
