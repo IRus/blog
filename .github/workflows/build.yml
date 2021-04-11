@@ -1,0 +1,37 @@
+name: "Build"
+on:
+  - "push"
+jobs:
+  build:
+    name: "Build on Ubuntu"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v2
+      - name: "Create LFS file list"
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+      - name: "Restore LFS cache"
+        uses: actions/cache@v2
+        id: lfs-cache
+        with:
+          path: .git/lfs
+          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
+      - name: "Git LFS Pull"
+        run: git lfs pull
+      - name: "Setup Hugo"
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.82.0"
+      - name: "Build"
+        run: hugo
+      - name: "Deploy"
+        uses: up9cloud/action-rsync@v1.3
+        env:
+          HOST: ibragimov.by
+          USER: deploy
+          KEY: ${{secrets.DEPLOY_SSH_KEY}}
+          SOURCE: ./public/
+          TARGET: ~/files/ibragimov.by/ruslan/
+          VERBOSE: true
+          ARGS: "-r --delete-after --quiet"
+          SSH_ARGS: "-p 22 -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
