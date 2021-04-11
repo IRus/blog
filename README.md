@@ -1,1 +1,2 @@
-# Zero Entropy [![Build Status](https://travis-ci.com/IRus/blog.svg?branch=master)](https://travis-ci.com/IRus/blog)
+# Zero Entropy [![Build](https://github.com/IRus/blog/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/IRus/blog/actions/workflows/build.yml)
+
