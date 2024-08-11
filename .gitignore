@@ -3,6 +3,7 @@
 
 # Built
 /public/
+.hugo_build.lock
 
 # Node
 /theme/node_modules/
