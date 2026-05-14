@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Налибоки 2026 — участники по категориям и полу</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; margin: 24px; color: #1a1a1a; }
+  h1 { font-size: 20px; }
+  h2 { font-size: 16px; margin-top: 32px; }
+  .chart-box { max-width: 760px; margin-bottom: 8px; }
+  table { border-collapse: collapse; margin: 8px 0 24px; font-size: 13px; }
+  th, td { border: 1px solid #ccc; padding: 4px 10px; text-align: center; }
+  th { background: #f0f0f0; }
+  caption { text-align: left; font-weight: bold; padding: 4px 0; }
+  .src { color: #777; font-size: 12px; }
+  .cats { max-width: 760px; background: #f7f7f7; border: 1px solid #ddd; border-radius: 6px; padding: 8px 18px; }
+  .cats dt { font-weight: bold; margin-top: 8px; }
+  .cats dd { margin: 2px 0 0 0; font-size: 14px; }
+  .cats .note { font-size: 13px; color: #555; margin-top: 12px; }
+</style>
+</head>
+<body>
+<h1>Марафон «Налибоки» 2026 — число участников по категориям (зачётам) и полу</h1>
+<p class="src">Источник: arf.by, режим lineups, на момент выгрузки. Категории — возрастные зачёты из регламента.</p>
+<p class="src">Треки дистанций (GPX) — коллекция на Komoot:
+<a href="https://www.komoot.com/collection/4343425/-naliboki-2026" target="_blank">komoot.com/collection/4343425/-naliboki-2026</a></p>
+
+<h2>Описание категорий (зачётов)</h2>
+<dl class="cats">
+  <dt>Семейный</dt>
+  <dd>Семейная команда: не менее 1 взрослого и 1 ребёнка (0–13 или 0–15 лет),
+      зарегистрированных на одну дистанцию. Движутся вместе (не далее 100 м / 2 мин).
+      Единый зачёт вне зависимости от возраста и пола членов команды.</dd>
+
+  <dt>Молодёжный</dt>
+  <dd>14–29 лет (родившиеся примерно 22.05.2012 – 31.12.1997). Подростки 14–15 лет
+      выступают самостоятельно только на коротких дистанциях (ВЕЛО21, БЕГ10);
+      на остальных — с 16 лет.</dd>
+
+  <dt>Взрослый</dt>
+  <dd>30–39 лет (родившиеся 01.01.1996 – 31.12.1987). Базовый зачёт: при недоборе
+      участников в него объединяются «Молодёжный» и «Мастерс».</dd>
+
+  <dt>Мастерс</dt>
+  <dd>40–49 лет (родившиеся 01.01.1986 – 31.12.1977).</dd>
+
+  <dt>Мастерс+ (Мастер-Плюс)</dt>
+  <dd>50 лет и старше (родившиеся 01.01.1976 и раньше).</dd>
+
+  <p class="note">
+    Возраст определяется на день старта. Возрастной зачёт вводится для конкретной
+    дистанции, пола и возраста <b>только если на 16.05.2026 в нём ≥ 6 зарегистрированных
+    и оплативших участников</b> — иначе он объединяется с соседним (Мастерс+ → Мастерс →
+    Взрослый ← Молодёжный). Кроме возрастных, на каждой дистанции отдельно разыгрывается
+    <b>«Абсолютный зачёт»</b> (1–3 места среди мужчин и среди женщин вне зависимости от
+    возраста); его призёры исключаются из расчёта возрастных зачётов. Существует также
+    <b>«Открытый зачёт»</b> — для электровелосипедов, моноколёс, каникросса и т.п.,
+    без определения победителей.
+  </p>
+</dl>
+
+<h2>ВЕЛО42 (class=bike-s) — всего 548 участников</h2>
+<div class="chart-box"><canvas id="chartS"></canvas></div>
+<table>
+  <caption>ВЕЛО42</caption>
+  <tr><th>Категория</th><th>Мужчины</th><th>Женщины</th><th>Не указан</th><th>Всего</th></tr>
+  <tr><td>Молодёжный</td><td>51</td><td>11</td><td>1</td><td>63</td></tr>
+  <tr><td>Взрослый</td><td>167</td><td>42</td><td>3</td><td>212</td></tr>
+  <tr><td>Мастерс</td><td>101</td><td>38</td><td>1</td><td>140</td></tr>
+  <tr><td>Мастерс+</td><td>39</td><td>7</td><td>0</td><td>46</td></tr>
+  <tr><td>Семейный</td><td>65</td><td>21</td><td>1</td><td>87</td></tr>
+  <tr><th>Итого</th><th>423</th><th>119</th><th>6</th><th>548</th></tr>
+</table>
+
+<h2>ВЕЛО100 (class=bike-m) — всего 485 участников</h2>
+<div class="chart-box"><canvas id="chartM"></canvas></div>
+<table>
+  <caption>ВЕЛО100</caption>
+  <tr><th>Категория</th><th>Мужчины</th><th>Женщины</th><th>Не указан</th><th>Всего</th></tr>
+  <tr><td>Молодёжный</td><td>54</td><td>17</td><td>0</td><td>71</td></tr>
+  <tr><td>Взрослый</td><td>188</td><td>38</td><td>4</td><td>230</td></tr>
+  <tr><td>Мастерс</td><td>122</td><td>19</td><td>0</td><td>141</td></tr>
+  <tr><td>Мастерс+</td><td>32</td><td>4</td><td>0</td><td>36</td></tr>
+  <tr><td>Семейный</td><td>5</td><td>2</td><td>0</td><td>7</td></tr>
+  <tr><th>Итого</th><th>401</th><th>80</th><th>4</th><th>485</th></tr>
+</table>
+
+<h2>ВЕЛО200 (class=bike-l) — всего 98 участников</h2>
+<div class="chart-box"><canvas id="chartL"></canvas></div>
+<table>
+  <caption>ВЕЛО200</caption>
+  <tr><th>Категория</th><th>Мужчины</th><th>Женщины</th><th>Всего</th></tr>
+  <tr><td>Молодёжный</td><td>14</td><td>0</td><td>14</td></tr>
+  <tr><td>Взрослый</td><td>41</td><td>7</td><td>48</td></tr>
+  <tr><td>Мастерс</td><td>23</td><td>4</td><td>27</td></tr>
+  <tr><td>Мастерс+</td><td>8</td><td>0</td><td>8</td></tr>
+  <tr><td>Семейный</td><td>1</td><td>0</td><td>1</td></tr>
+  <tr><th>Итого</th><th>87</th><th>11</th><th>98</th></tr>
+</table>
+
+<script>
+const cats = ['Молодёжный', 'Взрослый', 'Мастерс', 'Мастерс+', 'Семейный'];
+function mkChart(id, title, men, women) {
+  new Chart(document.getElementById(id), {
+    type: 'bar',
+    data: {
+      labels: cats,
+      datasets: [
+        { label: 'Мужчины', data: men, backgroundColor: '#2f6fb3' },
+        { label: 'Женщины', data: women, backgroundColor: '#e0729a' }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: { title: { display: true, text: title } },
+      scales: { y: { beginAtZero: true, title: { display: true, text: 'Участников' } } }
+    }
+  });
+}
+mkChart('chartS', 'ВЕЛО42 — участники по категориям и полу', [51,167,101,39,65], [11,42,38,7,21]);
+mkChart('chartM', 'ВЕЛО100 — участники по категориям и полу', [54,188,122,32,5], [17,38,19,4,2]);
+mkChart('chartL', 'ВЕЛО200 — участники по категориям и полу', [14,41,23,8,1], [0,7,4,0,0]);
+</script>
+</body>
+</html>
