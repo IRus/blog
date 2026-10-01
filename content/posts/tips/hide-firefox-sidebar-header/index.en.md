@@ -28,6 +28,8 @@ Replacing the old rule with this hides the header again:
 }
 ```
 
+![Firefox on macOS with Sidebery open and its sidebar header hidden](firefox-sidebery-without-header.png)
+
 The first selector matches the header's ID. The second matches the
 `sidebar-panel-header` element in any namespace. This removes the whole header row,
 including its controls, for all matching sidebars.
