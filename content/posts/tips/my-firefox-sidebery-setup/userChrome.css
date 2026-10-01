@@ -1,0 +1,21 @@
+@import url(chrome/hide_tabs_toolbar_v2.css);
+
+/* Hide Firefox revamped sidebar headers. */
+#sidebar-panel-header,
+*|sidebar-panel-header {
+  display: none !important;
+}
+
+/* Keep a gap beside the macOS window controls, including fullscreen. */
+@media (-moz-platform: macos) {
+  /* Show the macOS window controls in the navigation toolbar. */
+  #nav-bar > .titlebar-buttonbox-container,
+  #nav-bar > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    display: flex !important;
+  }
+
+  #nav-bar > .titlebar-spacer[type="pre-tabs"] {
+    display: flex !important;
+    width: 16px !important;
+  }
+}
