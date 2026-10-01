@@ -1,0 +1,16 @@
+@import url(chrome/hide_tabs_toolbar_osx.css);
+@import url(chrome/window_control_placeholder_support.css);
+
+/* Hide Firefox revamped sidebar headers. */
+#sidebar-panel-header,
+*|sidebar-panel-header {
+  display: none !important;
+}
+
+/* Always reserve space for macOS window controls, including fullscreen. */
+@media (-moz-platform: macos) {
+  #nav-bar {
+    /* 72px for the traffic lights plus a 16px gap before toolbar buttons. */
+    border-left: 88px solid transparent !important;
+  }
+}
