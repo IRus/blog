@@ -28,15 +28,13 @@ Sidebery's built-in styles editor only changes the extension's own interface.
 └── chrome/
     ├── userChrome.css
     └── chrome/
-        ├── hide_tabs_toolbar_osx.css
-        └── window_control_placeholder_support.css
+        └── hide_tabs_toolbar_v2.css
 ```
 
 Download the files I use:
 
 - [userChrome.css](userChrome.css)
-- [hide_tabs_toolbar_osx.css](chrome/hide_tabs_toolbar_osx.css)
-- [window_control_placeholder_support.css](chrome/window_control_placeholder_support.css)
+- [hide_tabs_toolbar_v2.css](chrome/hide_tabs_toolbar_v2.css)
 
 The nested `chrome` directory matches the relative paths in the imports. If you
 already have a `userChrome.css`, merge the rules into it and keep all `@import`
@@ -45,8 +43,7 @@ statements at the top.
 ## My userChrome configuration
 
 ```css
-@import url(chrome/hide_tabs_toolbar_osx.css);
-@import url(chrome/window_control_placeholder_support.css);
+@import url(chrome/hide_tabs_toolbar_v2.css);
 
 /* Hide Firefox revamped sidebar headers. */
 #sidebar-panel-header,
@@ -54,53 +51,30 @@ statements at the top.
   display: none !important;
 }
 
-/* Always reserve space for macOS window controls, including fullscreen. */
+/* Keep a gap beside the macOS window controls, including fullscreen. */
 @media (-moz-platform: macos) {
-  #nav-bar {
-    /* 72px for the traffic lights plus a 16px gap before toolbar buttons. */
-    border-left: 88px solid transparent !important;
+  #nav-bar > .titlebar-spacer[type="pre-tabs"] {
+    display: flex !important;
+    width: 16px !important;
   }
 }
 ```
 
-The two imported stylesheets come from
-[MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks).
-The downloads above are copies from my current setup, with their source and
-Mozilla Public License 2.0 notices preserved.
+The imported stylesheet comes from
+[MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/hide_tabs_toolbar_v2.css).
+The download above is the copy I use, with its source and Mozilla Public License
+2.0 notice preserved.
 
 ## Hide the native tab bar
 
-`hide_tabs_toolbar_osx.css` hides the contents of Firefox's tab toolbar while
-keeping its window controls visible. It then moves the navigation toolbar up
-into the freed space. `window_control_placeholder_support.css` supplies the
-supporting spacing rules.
+`hide_tabs_toolbar_v2.css` is designed for Firefox 133 and later. It collapses the
+horizontal tab toolbar and makes Firefox's window controls available in the
+navigation toolbar. This lets Firefox lay out the controls alongside the toolbar
+buttons, without the old negative top margin.
 
-The main rules in the macOS stylesheet are:
-
-```css
-:root {
-  --uc-toolbar-height: 32px;
-}
-
-:root:not([uidensity="compact"]) {
-  --uc-toolbar-height: 34px;
-}
-
-#TabsToolbar > * {
-  visibility: collapse !important;
-}
-
-#TabsToolbar > .titlebar-buttonbox-container {
-  visibility: visible !important;
-  height: var(--uc-toolbar-height) !important;
-}
-
-#nav-bar {
-  margin-top: calc(0px - var(--uc-toolbar-height));
-}
-```
-
-Use both downloaded helper files; the excerpt above isn't the complete setup.
+It handles the window controls itself, so it doesn't need the separate
+`window_control_placeholder_support.css` helper. The
+[maintainer describes that helper as legacy support for ESR 128](https://github.com/MrOtherGuy/firefox-csshacks/issues/489).
 
 ## Hide the sidebar header
 
@@ -120,11 +94,11 @@ cover the difference. If you still use the older layout, keep your
 ## Leave room for the window controls
 
 I also want the sidebar button to stay clear of the red, yellow and green macOS
-buttons. The final rule reserves 88 pixels on the left of the navigation toolbar:
-72 for the window controls plus a 16-pixel gap.
+buttons. Firefox now reserves space for the controls themselves. My final rule
+keeps its spacer before the toolbar buttons visible and sets it to 16 pixels.
 
-This override doesn't depend on the old helper's `tabsintitlebar` selectors,
-and it remains active in fullscreen. Change `88px` if you prefer more or less
-space.
+The rule also applies in fullscreen. Adjust `16px` to change the gap. There is no
+need to reserve another 72 pixels for the controls with a left border on the
+navigation toolbar; that would count their space twice.
 
 After saving the files, fully quit Firefox and reopen it to apply the styles.
