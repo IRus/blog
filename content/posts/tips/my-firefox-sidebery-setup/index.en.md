@@ -53,6 +53,12 @@ statements at the top.
 
 /* Keep a gap beside the macOS window controls, including fullscreen. */
 @media (-moz-platform: macos) {
+  /* macOS needs its navigation-toolbar window controls shown explicitly. */
+  #nav-bar > .titlebar-buttonbox-container,
+  #nav-bar > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    display: flex !important;
+  }
+
   #nav-bar > .titlebar-spacer[type="pre-tabs"] {
     display: flex !important;
     width: 16px !important;
@@ -93,9 +99,13 @@ cover the difference. If you still use the older layout, keep your
 
 ## Leave room for the window controls
 
-I also want the sidebar button to stay clear of the red, yellow and green macOS
-buttons. Firefox now reserves space for the controls themselves. My final rule
-keeps its spacer before the toolbar buttons visible and sets it to 16 pixels.
+On my Mac, the imported stylesheet alone hid the traffic-light buttons along
+with the tab bar. The macOS block in my configuration explicitly shows the
+navigation toolbar's window-control container and button box.
+
+I also want the sidebar button to stay clear of those controls. Firefox lays out
+the controls themselves, and my spacer rule keeps a 16-pixel gap before the
+toolbar buttons.
 
 The rule also applies in fullscreen. Adjust `16px` to change the gap. There is no
 need to reserve another 72 pixels for the controls with a left border on the

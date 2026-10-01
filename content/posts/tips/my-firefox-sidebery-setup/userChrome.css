@@ -8,6 +8,12 @@
 
 /* Keep a gap beside the macOS window controls, including fullscreen. */
 @media (-moz-platform: macos) {
+  /* macOS needs its navigation-toolbar window controls shown explicitly. */
+  #nav-bar > .titlebar-buttonbox-container,
+  #nav-bar > .titlebar-buttonbox-container > .titlebar-buttonbox {
+    display: flex !important;
+  }
+
   #nav-bar > .titlebar-spacer[type="pre-tabs"] {
     display: flex !important;
     width: 16px !important;
