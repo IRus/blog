@@ -7,21 +7,26 @@ categories:
 ---
 
 I use Firefox on macOS with [Sidebery](https://github.com/mbnuqw/sidebery) for vertical
-tabs. I hide Firefox's horizontal tab bar and the sidebar header, and leave space
-between the macOS window controls and the sidebar button. This is my setup with
-Firefox 157.
+tabs. Here is my configuration, tested with Firefox 157 in normal and fullscreen
+modes.
 
 ![Firefox on macOS with Sidebery, a hidden horizontal tab bar and sidebar header, and space beside the window controls](firefox-sidebery-setup.png)
 
-## Enable custom stylesheets
+## What it changes
 
-These styles change Firefox's interface, so they belong in `userChrome.css`.
-Sidebery's built-in styles editor only changes the extension's own interface.
+- Hides Firefox's horizontal tab bar, leaving tab management to Sidebery.
+- Hides Firefox's sidebar header, including its title and controls.
+- Keeps the macOS traffic-light buttons in the navigation toolbar, with a 16-pixel
+  gap before the toolbar buttons, including in fullscreen.
+
+## How to apply it
 
 1. Install Sidebery and open its sidebar.
 2. Open `about:config` and set `toolkit.legacyUserProfileCustomizations.stylesheets` to `true`.
 3. Open `about:support` and open the **Profile Folder** (also called **Profile Directory**).
-4. Create a `chrome` folder inside your profile and arrange the files as shown below.
+4. Download [userChrome.css](userChrome.css) and
+   [hide_tabs_toolbar_v2.css](chrome/hide_tabs_toolbar_v2.css), then save them inside
+   your profile with this directory structure:
 
 ```text
 <Firefox profile>/
@@ -31,16 +36,13 @@ Sidebery's built-in styles editor only changes the extension's own interface.
         └── hide_tabs_toolbar_v2.css
 ```
 
-Download the files I use:
+If you already have a `userChrome.css`, merge the configuration below into it and
+keep all `@import` statements at the top. These styles belong in Firefox's profile,
+not Sidebery's styles editor.
 
-- [userChrome.css](userChrome.css)
-- [hide_tabs_toolbar_v2.css](chrome/hide_tabs_toolbar_v2.css)
+Fully quit Firefox and reopen it to apply the changes.
 
-The nested `chrome` directory matches the relative paths in the imports. If you
-already have a `userChrome.css`, merge the rules into it and keep all `@import`
-statements at the top.
-
-## My userChrome configuration
+## Configuration
 
 ```css
 @import url(chrome/hide_tabs_toolbar_v2.css);
@@ -53,7 +55,7 @@ statements at the top.
 
 /* Keep a gap beside the macOS window controls, including fullscreen. */
 @media (-moz-platform: macos) {
-  /* macOS needs its navigation-toolbar window controls shown explicitly. */
+  /* Show the macOS window controls in the navigation toolbar. */
   #nav-bar > .titlebar-buttonbox-container,
   #nav-bar > .titlebar-buttonbox-container > .titlebar-buttonbox {
     display: flex !important;
@@ -66,49 +68,8 @@ statements at the top.
 }
 ```
 
-The imported stylesheet comes from
+Change `16px` to adjust the gap beside the window controls.
+
+The imported tab-bar stylesheet comes from
 [MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks/blob/master/chrome/hide_tabs_toolbar_v2.css).
-The download above is the copy I use, with its source and Mozilla Public License
-2.0 notice preserved.
-
-## Hide the native tab bar
-
-`hide_tabs_toolbar_v2.css` is designed for Firefox 133 and later. It collapses the
-horizontal tab toolbar and makes Firefox's window controls available in the
-navigation toolbar. This lets Firefox lay out the controls alongside the toolbar
-buttons, without the old negative top margin.
-
-It handles the window controls itself, so it doesn't need the separate
-`window_control_placeholder_support.css` helper. The
-[maintainer describes that helper as legacy support for ESR 128](https://github.com/MrOtherGuy/firefox-csshacks/issues/489).
-
-## Hide the sidebar header
-
-After a Firefox update, the "Sidebery" header appeared above my tabs again.
-My old rule targeted `#sidebar-header`, which belongs to Firefox's older sidebar
-layout. Custom stylesheets were still enabled, but that selector no longer
-matched the revamped header.
-
-The replacement in my configuration uses `#sidebar-panel-header` for the header's
-ID and `*|sidebar-panel-header` for the element in any namespace. It removes the
-whole header row, including its controls, for all matching sidebars. The
-[Sidebery maintainer's explanation](https://github.com/mbnuqw/sidebery/discussions/2169)
-and [header selector discussion](https://github.com/piroor/treestyletab/discussions/3762)
-cover the difference. If you still use the older layout, keep your
-`#sidebar-header` rule too.
-
-## Leave room for the window controls
-
-On my Mac, the imported stylesheet alone hid the traffic-light buttons along
-with the tab bar. The macOS block in my configuration explicitly shows the
-navigation toolbar's window-control container and button box.
-
-I also want the sidebar button to stay clear of those controls. Firefox lays out
-the controls themselves, and my spacer rule keeps a 16-pixel gap before the
-toolbar buttons.
-
-The rule also applies in fullscreen. Adjust `16px` to change the gap. There is no
-need to reserve another 72 pixels for the controls with a left border on the
-navigation toolbar; that would count their space twice.
-
-After saving the files, fully quit Firefox and reopen it to apply the styles.
+Its source and Mozilla Public License 2.0 notice are preserved in the download.
